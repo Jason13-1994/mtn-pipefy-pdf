@@ -1,0 +1,24 @@
+# tests.yml — pytest CI gate (TEST-04, half A).
+#
+# STATUS (per locked decision D-02): structurally correct, authored and
+# source-verified offline, NOT YET PROVEN TO FIRE. No dedicated MTN git
+# repository exists yet — this project is still untracked inside the
+# personal multi-client `Jason13-1994/client-docs` workspace repo. Proving
+# this workflow actually runs on push is Phase 3's responsibility, once the
+# repo extraction happens (ROADMAP.md Phase 3 success criterion 0).
+#
+# Needs no secret — installs requirements.txt + requirements-dev.txt
+# (pytest==9.1.1, pypdf==6.16.1, from 02-01) and runs the full suite.
+name: tests
+on:
+  push:
+jobs:
+  pytest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.14"
+      - run: pip install -r requirements.txt -r requirements-dev.txt
+      - run: python -m pytest

@@ -1,0 +1,3902 @@
+{
+ "profile": "brief",
+ "pipe": {
+  "id": "307284210",
+  "name": "Campaign Briefing",
+  "start_form_fields": [
+   {
+    "id": "brief_attached",
+    "internal_id": "432597910",
+    "label": "Brief attached",
+    "type": "attachment",
+    "index": -200.0,
+    "description": "",
+    "options": [],
+    "required": false
+   },
+   {
+    "id": "brief_owner",
+    "internal_id": "432597912",
+    "label": "Brief owner",
+    "type": "assignee_select",
+    "index": -100.0,
+    "description": "",
+    "options": [],
+    "required": false
+   },
+   {
+    "id": "field",
+    "internal_id": "432597916",
+    "label": "\u200e ",
+    "type": "checklist_vertical",
+    "index": 0.0,
+    "description": "___\n## Job information\n___",
+    "options": [],
+    "required": false
+   },
+   {
+    "id": "is_this_job_part_of_an_approved_campaign",
+    "internal_id": "432597921",
+    "label": "Is this job part of an approved campaign?",
+    "type": "radio_horizontal",
+    "index": 1.0,
+    "description": null,
+    "options": [
+     "Yes",
+     "No"
+    ],
+    "required": true
+   },
+   {
+    "id": "campaign",
+    "internal_id": "432597924",
+    "label": "Select campaign",
+    "type": "connector",
+    "index": 2.0,
+    "description": "Select the campaign this job belongs to",
+    "options": [],
+    "required": true
+   },
+   {
+    "id": "job_name",
+    "internal_id": "432597926",
+    "label": "Job name",
+    "type": "short_text",
+    "index": 3.0,
+    "description": "The name of the job",
+    "options": [],
+    "required": true
+   },
+   {
+    "id": "brief_type",
+    "internal_id": "432597927",
+    "label": "Brief type",
+    "type": "select",
+    "index": 4.0,
+    "description": "What type of brief is this?",
+    "options": [
+     "Integrated",
+     "Media",
+     "Sponsorship and activation",
+     "PR",
+     "Digital"
+    ],
+    "required": true
+   },
+   {
+    "id": "tier",
+    "internal_id": "432597928",
+    "label": "Tier",
+    "type": "select",
+    "index": 5.0,
+    "description": "Which tier does this job fall under?",
+    "options": [
+     "Tier 1",
+     "Tier 2",
+     "Tier 3"
+    ],
+    "required": true
+   },
+   {
+    "id": "originating_opco",
+    "internal_id": "432597929",
+    "label": "Originating OpCo",
+    "type": "select",
+    "index": 6.0,
+    "description": "Which OpCo does this campaign belong to?",
+    "options": [
+     "Uganda",
+     "Zambia"
+    ],
+    "required": true
+   },
+   {
+    "id": "uganda_division",
+    "internal_id": "432597930",
+    "label": "Uganda division",
+    "type": "select",
+    "index": 7.0,
+    "description": "Which Uganda division does this campaign belong to?",
+    "options": [
+     "Business intelligence",
+     "Capital projects",
+     "CEO's office",
+     "Corporate services",
+     "Customer experience",
+     "Enterprise business unit",
+     "Finance",
+     "Growth and new business",
+     "Human resource",
+     "Internal audit",
+     "Marketing",
+     "MFS",
+     "Risk and compliance",
+     "Sales and distribution",
+     "Technology"
+    ],
+    "required": true
+   },
+   {
+    "id": "uganda_marketing_division",
+    "internal_id": "432597931",
+    "label": "Uganda marketing division",
+    "type": "select",
+    "index": 8.0,
+    "description": "Which Uganda marketing sub-division?",
+    "options": [
+     "Brand & Communications",
+     "Consumer Segments ",
+     "CVM and loyalty",
+     "Digital services (RMS)",
+     "Roaming & Carrier Services"
+    ],
+    "required": false
+   },
+   {
+    "id": "uganda_finance_division",
+    "internal_id": "432597932",
+    "label": "Uganda finance division",
+    "type": "select",
+    "index": 9.0,
+    "description": "Which Uganda finance sub-division?",
+    "options": [
+     "Supply chain",
+     "Investor relations",
+     "Finance operations"
+    ],
+    "required": true
+   },
+   {
+    "id": "uganda_enterprise_division",
+    "internal_id": "432597933",
+    "label": "Uganda enterprise division",
+    "type": "select",
+    "index": 10.0,
+    "description": "Which Uganda enterprise sub-division?",
+    "options": [
+     "Large enterprise",
+     "SME",
+     "Government"
+    ],
+    "required": true
+   },
+   {
+    "id": "uganda_technology_division",
+    "internal_id": "432597934",
+    "label": "Uganda technology division",
+    "type": "select",
+    "index": 11.0,
+    "description": "Which Uganda technology sub-division?",
+    "options": [
+     "IT",
+     "Network",
+     "Nooc"
+    ],
+    "required": true
+   },
+   {
+    "id": "uganda_corporate_services_division",
+    "internal_id": "432597935",
+    "label": "Uganda corporate services division",
+    "type": "select",
+    "index": 12.0,
+    "description": "Which Uganda corporate services sub-division?",
+    "options": [
+     "Legal and regulatory",
+     "MTN foundation"
+    ],
+    "required": true
+   },
+   {
+    "id": "uganda_business_intelligence_division",
+    "internal_id": "432597936",
+    "label": "Uganda business intelligence division",
+    "type": "select",
+    "index": 13.0,
+    "description": "Which Uganda business intelligence sub-division?",
+    "options": [
+     "Research"
+    ],
+    "required": true
+   },
+   {
+    "id": "zambia_division",
+    "internal_id": "432597937",
+    "label": "Zambia division",
+    "type": "select",
+    "index": 14.0,
+    "description": "Which Zambia division does this campaign belong to?",
+    "options": [
+     "CEO's office",
+     "Corporate services",
+     "Enterprise business unit (EBU)",
+     "Finance",
+     "Fintech",
+     "Human resources",
+     "Internal audit and forensics",
+     "Marketing",
+     "MTN home",
+     "Risk and compliance",
+     "Sales and distribution",
+     "Technology"
+    ],
+    "required": true
+   },
+   {
+    "id": "zambia_marketing_division",
+    "internal_id": "432597938",
+    "label": "Zambia marketing division",
+    "type": "select",
+    "index": 15.0,
+    "description": "",
+    "options": [
+     "Brand and communications",
+     "Consumer segments",
+     "Customer experience (CEX)",
+     "Customer value management (CVM)",
+     "DACOE",
+     "Digital and rich media Services",
+     "Pricing"
+    ],
+    "required": true
+   },
+   {
+    "id": "zambia_enterprise_business_unit_ebu",
+    "internal_id": "432597939",
+    "label": "Zambia enterprise business unit (EBU)",
+    "type": "select",
+    "index": 15.5,
+    "description": "",
+    "options": [
+     "Government",
+     "Large enterprises (LE)",
+     "Small and medium enterprises (SME)"
+    ],
+    "required": true
+   },
+   {
+    "id": "zambia_mtn_home_division",
+    "internal_id": "432597940",
+    "label": "Zambia MTN home division",
+    "type": "select",
+    "index": 15.75,
+    "description": "",
+    "options": [
+     "Fibre to the home (FTTH)",
+     "Fixed wireless access (FWA)"
+    ],
+    "required": true
+   },
+   {
+    "id": "zambia_finance_division",
+    "internal_id": "432597941",
+    "label": "Zambia finance division",
+    "type": "select",
+    "index": 15.875,
+    "description": "",
+    "options": [
+     "Procurement",
+     "Facilities",
+     "Operations",
+     "Commercial finance",
+     "Revenue assurance and fraud litigation"
+    ],
+    "required": true
+   },
+   {
+    "id": "zambia_technology_division",
+    "internal_id": "432597942",
+    "label": "Zambia technology division",
+    "type": "select",
+    "index": 15.9375,
+    "description": "",
+    "options": [
+     "IT",
+     "Networks"
+    ],
+    "required": true
+   },
+   {
+    "id": "zambia_corporate_services",
+    "internal_id": "432597943",
+    "label": "Zambia corporate services",
+    "type": "select",
+    "index": 15.96875,
+    "description": "",
+    "options": [
+     "Legal",
+     "MTN foundation"
+    ],
+    "required": true
+   },
+   {
+    "id": "field_1",
+    "internal_id": "432597944",
+    "label": "\u200e \u200e \u200e \u200e \u200e \u200e \u200e \u200e \u200e \u200e ",
+    "type": "checklist_vertical",
+    "index": 16.0,
+    "description": "___\n## Channels and elements\n___",
+    "options": [],
+    "required": false
+   },
+   {
+    "id": "required_channels",
+    "internal_id": "432597945",
+    "label": "Required channels",
+    "type": "checklist_vertical",
+    "index": 17.0,
+    "description": "Which channels are required for this integrated campaign?",
+    "options": [
+     "ATL",
+     "BTL",
+     "Digital",
+     "Internal communications",
+     "PR",
+     "Retail",
+     "Sponsorship and activation"
+    ],
+    "required": true
+   },
+   {
+    "id": "atl_elements",
+    "internal_id": "432597946",
+    "label": "ATL elements",
+    "type": "checklist_vertical",
+    "index": 18.0,
+    "description": "ATL elements required",
+    "options": [
+     "Cinema",
+     "OOH (Out of Home)",
+     "Digital OOH (Out of Home)",
+     "Press",
+     "Print (Magazine)",
+     "Radio",
+     "Toolkit",
+     "TV"
+    ],
+    "required": false
+   },
+   {
+    "id": "btl_elements",
+    "internal_id": "432597947",
+    "label": "BTL elements",
+    "type": "checklist_vertical",
+    "index": 19.0,
+    "description": "BTL elements required",
+    "options": [
+     "CRM",
+     "Digital & social media activations (BTL focused)",
+     "Direct marketing",
+     "Guerrilla marketing & viral campaigns",
+     "Out-of-Home (OOH) experiential",
+     "Retail POS & in-store",
+     "Roadshows & activations",
+     "Sponsorship & events",
+     "Toolkit",
+     "Trade marketing"
+    ],
+    "required": false
+   },
+   {
+    "id": "digital_elements",
+    "internal_id": "432597948",
+    "label": "Digital elements",
+    "type": "checklist_vertical",
+    "index": 20.0,
+    "description": "Digital elements required",
+    "options": [
+     "Behind the scenes",
+     "Campaign web page / microsite",
+     "Content (native) Marketing",
+     "Digital activation",
+     "Digital app/game",
+     "Digital banners",
+     "Digital content (e.g. podcast, online show)",
+     "Digital media owner direct/Premium",
+     "Digital takeover",
+     "Emailers",
+     "Google Display",
+     "Google Search",
+     "Influencer marketing",
+     "Organic social media content (in-feed)",
+     "Other",
+     "Programmatic banners",
+     "SMS/Whatsapp campaigns",
+     "Social media ads",
+     "Social media campaign",
+     "Social media content",
+     "Toolkit",
+     "Website"
+    ],
+    "required": false
+   },
+   {
+    "id": "internal_communications_elements",
+    "internal_id": "432597949",
+    "label": "Internal communications elements",
+    "type": "checklist_vertical",
+    "index": 21.0,
+    "description": "Internal communications elements required",
+    "options": [
+     "AmaY\u2019ello competition",
+     "AmaY\u2019ello messages",
+     "Desktop background",
+     "eCards",
+     "Emailer",
+     "Emailer series",
+     "Printed collateral",
+     "Profile picture update for teams / Social media",
+     "Screen-lock background",
+     "Screensavers",
+     "Teams background",
+     "Toolkit"
+    ],
+    "required": false
+   },
+   {
+    "id": "sponsorship_and_activation_elements",
+    "internal_id": "432597950",
+    "label": "Sponsorship and activation elements",
+    "type": "checklist_vertical",
+    "index": 22.0,
+    "description": "Sponsorship and activation elements required",
+    "options": [
+     "Activation",
+     "Branding",
+     "Conference",
+     "Dinner experience",
+     "Event - physical, virtual or hybrid",
+     "Exhibition",
+     "Golf Day",
+     "Internal launch / townhall event",
+     "Other (please specify)",
+     "Promotional items",
+     "Round table discussion or meeting",
+     "Sporting event or activation",
+     "Stadium hospitality experience",
+     "Team building / workshop",
+     "Ticket procurement",
+     "Viewing experience"
+    ],
+    "required": false
+   },
+   {
+    "id": "pr_elements",
+    "internal_id": "432597951",
+    "label": "PR elements",
+    "type": "checklist_vertical",
+    "index": 23.0,
+    "description": "PR elements required",
+    "options": [
+     "Advertorial",
+     "Blog",
+     "Carousel",
+     "Case study",
+     "Crisis playbook",
+     "Crisis response",
+     "Customer service",
+     "Emailer",
+     "Event or activation",
+     "FAQ doc",
+     "GIF",
+     "High profile media",
+     "Holding statement",
+     "Independent review",
+     "Influencer engagement",
+     "Internal comms",
+     "Investor call",
+     "Issue preparedness and assessment/monitoring",
+     "JPEG",
+     "Live briefing",
+     "Media alert",
+     "Media interviews/briefings",
+     "Media invite",
+     "Media list",
+     "Media training",
+     "Microsite",
+     "Op-ed",
+     "Other (specify)",
+     "Panel",
+     "Podcast",
+     "Presentation",
+     "Press briefing",
+     "Press release",
+     "Promotional gifts/materials",
+     "Reel",
+     "Regulatory report",
+     "Scenario planning & response framework",
+     "SEO",
+     "Social media",
+     "Stakeholder forum",
+     "Stakeholder letter",
+     "Structural announcement",
+     "Thought leadership content hub",
+     "Thought leadership piece",
+     "Town hall",
+     "Video",
+     "Web banner/ad",
+     "Webinar",
+     "Website",
+     "Whitepaper"
+    ],
+    "required": false
+   },
+   {
+    "id": "field_2",
+    "internal_id": "432597952",
+    "label": "\u200e \u200e \u200e \u200e \u200e ",
+    "type": "checklist_vertical",
+    "index": 24.0,
+    "description": "___\n## Job timelines\n___",
+    "options": [],
+    "required": false
+   },
+   {
+    "id": "first_revert_date",
+    "internal_id": "432597953",
+    "label": "First revert date",
+    "type": "datetime",
+    "index": 25.0,
+    "description": "Date of the first revert to the client",
+    "options": [],
+    "required": true
+   },
+   {
+    "id": "job_go_live_date",
+    "internal_id": "432597954",
+    "label": "Job go live date",
+    "type": "date",
+    "index": 26.0,
+    "description": "When the job goes live",
+    "options": [],
+    "required": true
+   },
+   {
+    "id": "material_delivery_date",
+    "internal_id": "432597955",
+    "label": "Material delivery date",
+    "type": "date",
+    "index": 27.0,
+    "description": "When material must be delivered",
+    "options": [],
+    "required": false
+   },
+   {
+    "id": "job_end_date",
+    "internal_id": "432597956",
+    "label": "Job end date",
+    "type": "date",
+    "index": 28.0,
+    "description": "When the job ends",
+    "options": [],
+    "required": true
+   },
+   {
+    "id": "key_milestones",
+    "internal_id": "432597957",
+    "label": "Key milestones",
+    "type": "long_text",
+    "index": 29.0,
+    "description": "Key dates and milestones to be noted",
+    "options": [],
+    "required": false
+   },
+   {
+    "id": "field_3",
+    "internal_id": "432597958",
+    "label": "\u200e \u200e \u200e ",
+    "type": "checklist_vertical",
+    "index": 31.0,
+    "description": "___\n## Job details\n___",
+    "options": [],
+    "required": false
+   },
+   {
+    "id": "the_brief_in_a_sentence",
+    "internal_id": "432597959",
+    "label": "The brief in a sentence",
+    "type": "short_text",
+    "index": 32.0,
+    "description": "A short, inspiring, one-line brief",
+    "options": [],
+    "required": true
+   },
+   {
+    "id": "job_objective",
+    "internal_id": "432597960",
+    "label": "Job objective",
+    "type": "long_text",
+    "index": 33.0,
+    "description": "What is the goal or purpose of this job? What are we trying to achieve?",
+    "options": [],
+    "required": true
+   },
+   {
+    "id": "job_background",
+    "internal_id": "432597961",
+    "label": "Job background",
+    "type": "long_text",
+    "index": 34.0,
+    "description": "Context leading up to why the intervention is necessary. What is the business problem, and what is the overall picture?",
+    "options": [],
+    "required": true
+   },
+   {
+    "id": "key_message",
+    "internal_id": "432597962",
+    "label": "Key message",
+    "type": "long_text",
+    "index": 35.0,
+    "description": "What is the most important thing to say to achieve our objective?",
+    "options": [],
+    "required": true
+   },
+   {
+    "id": "key_requirements",
+    "internal_id": "432597963",
+    "label": "Key requirements",
+    "type": "long_text",
+    "index": 36.0,
+    "description": "What are the key requirements for this brief?",
+    "options": [],
+    "required": true
+   },
+   {
+    "id": "creative_inspiration",
+    "internal_id": "432597964",
+    "label": "Creative inspiration",
+    "type": "checklist_horizontal",
+    "index": 37.0,
+    "description": "Any creative inspiration or references",
+    "options": [
+     "Attachment(s)",
+     "Free text / Link(s)"
+    ],
+    "required": false
+   },
+   {
+    "id": "creative_inspiration_attachment_s",
+    "internal_id": "432597965",
+    "label": "Creative inspiration attachment(s)",
+    "type": "attachment",
+    "index": 38.0,
+    "description": "Attach any creative inspiration or references",
+    "options": [],
+    "required": true
+   },
+   {
+    "id": "creative_inspiration_free_text_link_s",
+    "internal_id": "432597966",
+    "label": "Creative inspiration free text / link(s)",
+    "type": "long_text",
+    "index": 39.0,
+    "description": "Add as text or a link",
+    "options": [],
+    "required": true
+   },
+   {
+    "id": "faqs_and_customer_journey",
+    "internal_id": "432597967",
+    "label": "FAQs and customer journey",
+    "type": "checklist_horizontal",
+    "index": 40.0,
+    "description": "How does the product work? Key FAQs and the customer journey.",
+    "options": [
+     "Attachment(s)",
+     "Free text / Link(s)"
+    ],
+    "required": false
+   },
+   {
+    "id": "faqs_and_customer_journey_attachment_s",
+    "internal_id": "432597968",
+    "label": "FAQs and customer journey attachment(s)",
+    "type": "attachment",
+    "index": 41.0,
+    "description": "Attach how does the product work? Key FAQs and the customer journey.",
+    "options": [],
+    "required": true
+   },
+   {
+    "id": "faqs_and_customer_journey_free_text_link_s",
+    "internal_id": "432597969",
+    "label": "FAQs and customer journey free text / link(s)",
+    "type": "long_text",
+    "index": 42.0,
+    "description": "Add the FAQs and customer journey as text or a link",
+    "options": [],
+    "required": true
+   },
+   {
+    "id": "strategic_pillar",
+    "internal_id": "432597970",
+    "label": "Strategic element",
+    "type": "select",
+    "index": 43.0,
+    "description": "Which primary strategic pillar does this job support?",
+    "options": [
+     "Positioning",
+     "Proposition",
+     "Promotion"
+    ],
+    "required": true
+   },
+   {
+    "id": "ugandan_promotion_budget",
+    "internal_id": "432689314",
+    "label": "Ugandan promotion budget",
+    "type": "currency",
+    "index": 43.125,
+    "description": "Budget allocation for promotion",
+    "options": [],
+    "required": false
+   },
+   {
+    "id": "zambian_promotion_budget",
+    "internal_id": "432689308",
+    "label": "Zambian promotion budget",
+    "type": "currency",
+    "index": 43.15625,
+    "description": "Budget allocation for promotion",
+    "options": [],
+    "required": false
+   },
+   {
+    "id": "ugandan_positioning_budget",
+    "internal_id": "432689336",
+    "label": "Ugandan positioning budget",
+    "type": "currency",
+    "index": 43.171875,
+    "description": "Budget allocation for positioning ",
+    "options": [],
+    "required": false
+   },
+   {
+    "id": "zambian_positioning_budget",
+    "internal_id": "432689315",
+    "label": "Zambian positioning budget",
+    "type": "currency",
+    "index": 43.1875,
+    "description": "Budget allocation for positioning ",
+    "options": [],
+    "required": false
+   },
+   {
+    "id": "ugandan_proposition_budget",
+    "internal_id": "432689358",
+    "label": "Ugandan proposition budget",
+    "type": "currency",
+    "index": 43.25,
+    "description": "Budget allocation for propositioning ",
+    "options": [],
+    "required": false
+   },
+   {
+    "id": "zambian_proposition_budget",
+    "internal_id": "432689338",
+    "label": "Zambian proposition budget",
+    "type": "currency",
+    "index": 43.3125,
+    "description": "Budget allocation for propositioning ",
+    "options": [],
+    "required": false
+   },
+   {
+    "id": "target_audience",
+    "internal_id": "432597971",
+    "label": "Target audience",
+    "type": "checklist_vertical",
+    "index": 43.5,
+    "description": "Who is our primary audience?",
+    "options": [
+     "Government / public sector",
+     "High value",
+     "Large corporates",
+     "Mass",
+     "SMEs",
+     "Youth",
+     "Home",
+     "Dealers",
+     "Merchants / Agents",
+     "MTN staff",
+     "Other"
+    ],
+    "required": true
+   },
+   {
+    "id": "target_audience_other",
+    "internal_id": "432597972",
+    "label": "Target audience - other",
+    "type": "short_text",
+    "index": 43.6875,
+    "description": "Which other audience(s) are we targeting?",
+    "options": [],
+    "required": true
+   },
+   {
+    "id": "target_audience_additional_information",
+    "internal_id": "432597973",
+    "label": "Target audience additional information",
+    "type": "long_text",
+    "index": 46.34375,
+    "description": "Any further detail on the target audience",
+    "options": [],
+    "required": false
+   },
+   {
+    "id": "competitor_context",
+    "internal_id": "432597974",
+    "label": "Competitor context",
+    "type": "checklist_horizontal",
+    "index": 49.0,
+    "description": "What are we up against and what differentiates us?",
+    "options": [
+     "Attachment(s)",
+     "Free text / Link(s)"
+    ],
+    "required": false
+   },
+   {
+    "id": "competitor_context_attachment_s",
+    "internal_id": "432597975",
+    "label": "Competitor context attachment(s)",
+    "type": "attachment",
+    "index": 50.0,
+    "description": "Attach what are we up against and what differentiates us?",
+    "options": [],
+    "required": true
+   },
+   {
+    "id": "competitor_context_free_text_link_s",
+    "internal_id": "432597976",
+    "label": "Competitor context free text / link(s)",
+    "type": "long_text",
+    "index": 51.0,
+    "description": "Add as text or a link",
+    "options": [],
+    "required": true
+   },
+   {
+    "id": "go_to_market_plan",
+    "internal_id": "432597977",
+    "label": "Go to market plan",
+    "type": "checklist_horizontal",
+    "index": 52.0,
+    "description": "Attach or link the go-to-market plan",
+    "options": [
+     "Attachment(s)",
+     "Free text / Link(s)"
+    ],
+    "required": false
+   },
+   {
+    "id": "go_to_market_plan_attachment_s",
+    "internal_id": "432597978",
+    "label": "Go to market plan attachment(s)",
+    "type": "attachment",
+    "index": 53.0,
+    "description": "Attach the go-to-market plan",
+    "options": [],
+    "required": true
+   },
+   {
+    "id": "go_to_market_plan_free_text_link_s",
+    "internal_id": "432597979",
+    "label": "Go to market plan free text / link(s)",
+    "type": "long_text",
+    "index": 54.0,
+    "description": "Add the go-to-market plan as text or a link",
+    "options": [],
+    "required": true
+   },
+   {
+    "id": "kpi_pillar",
+    "internal_id": "432597980",
+    "label": "KPI pillar",
+    "type": "checklist_vertical",
+    "index": 55.0,
+    "description": "How will we measure success?",
+    "options": [
+     "Awareness",
+     "Brand desire",
+     "Brand trust",
+     "Customer acquisition & growth",
+     "Digital communication",
+     "Net promoter score (NPS)",
+     "Other"
+    ],
+    "required": true
+   },
+   {
+    "id": "kpi_pillar_other_please_specify",
+    "internal_id": "432597981",
+    "label": "KPI pillar - other",
+    "type": "short_text",
+    "index": 55.25,
+    "description": "",
+    "options": [],
+    "required": true
+   },
+   {
+    "id": "awareness_kpi",
+    "internal_id": "432597982",
+    "label": "Awareness KPI",
+    "type": "checklist_vertical",
+    "index": 56.0,
+    "description": "Which awareness KPI(s) are we measuring?",
+    "options": [
+     "Ad recall",
+     "Frequency",
+     "Reach",
+     "Recommendation",
+     "TOMA",
+     "TOMBA",
+     "Other"
+    ],
+    "required": false
+   },
+   {
+    "id": "awareness_kpi_other_please_specify",
+    "internal_id": "432597983",
+    "label": "Awareness KPI - other",
+    "type": "short_text",
+    "index": 56.5,
+    "description": "",
+    "options": [],
+    "required": true
+   },
+   {
+    "id": "acquisition_growth_kpi",
+    "internal_id": "432597984",
+    "label": "Acquisition & growth KPI",
+    "type": "checklist_vertical",
+    "index": 57.0,
+    "description": "Which acquisition & growth KPI(s) are we measuring?",
+    "options": [
+     "Churn rate reduction",
+     "Data bundle purchases",
+     "Market share growth",
+     "Mobile money transactions",
+     "New subscribers",
+     "Product uptake",
+     "Voice usage growth",
+     "Other"
+    ],
+    "required": false
+   },
+   {
+    "id": "acquisition_growth_kpi_other_please_specify",
+    "internal_id": "432597985",
+    "label": "Acquisition & growth KPI - other",
+    "type": "short_text",
+    "index": 57.5,
+    "description": "",
+    "options": [],
+    "required": true
+   },
+   {
+    "id": "digital_communication_kpi",
+    "internal_id": "432597986",
+    "label": "Digital communication KPI",
+    "type": "checklist_vertical",
+    "index": 58.0,
+    "description": "Which digital communication KPI(s) are we measuring?",
+    "options": [
+     "App active users",
+     "App installs",
+     "Conversion",
+     "Conversion rate",
+     "Engagement",
+     "Engagement rate",
+     "Lead generation volume",
+     "Sales revenue",
+     "Sentiment",
+     "Time spent on content",
+     "Video completion rate",
+     "Video views",
+     "Website traffic",
+     "Other"
+    ],
+    "required": false
+   },
+   {
+    "id": "digital_communication_kpi_other_please_specify",
+    "internal_id": "432597987",
+    "label": "Digital communication KPI - other",
+    "type": "short_text",
+    "index": 58.5,
+    "description": "",
+    "options": [],
+    "required": true
+   },
+   {
+    "id": "brand_desire_kpi",
+    "internal_id": "432597988",
+    "label": "Brand desire KPI",
+    "type": "checklist_vertical",
+    "index": 59.0,
+    "description": "Which brand desire KPI(s) are we measuring?",
+    "options": [
+     "Data contribution",
+     "MOMO contribution",
+     "Overall desire",
+     "Voice contribution",
+     "Youth contribution",
+     "Other"
+    ],
+    "required": false
+   },
+   {
+    "id": "brand_desire_kpi_other_please_specify",
+    "internal_id": "432597989",
+    "label": "Brand desire KPI - other",
+    "type": "short_text",
+    "index": 59.5,
+    "description": "",
+    "options": [],
+    "required": true
+   },
+   {
+    "id": "nps_kpi",
+    "internal_id": "432597990",
+    "label": "NPS KPI",
+    "type": "checklist_vertical",
+    "index": 60.0,
+    "description": "Which NPS KPI(s) are we measuring?",
+    "options": [
+     "Brand NPS",
+     "Overall NPS",
+     "Product NPS",
+     "Other"
+    ],
+    "required": false
+   },
+   {
+    "id": "nps_kpi_other_please_specify",
+    "internal_id": "432597991",
+    "label": "NPS KPI - other",
+    "type": "short_text",
+    "index": 60.5,
+    "description": "",
+    "options": [],
+    "required": true
+   },
+   {
+    "id": "zambia_agencies_required",
+    "internal_id": "432597993",
+    "label": "Zambia agencies required",
+    "type": "checklist_vertical",
+    "index": 62.0,
+    "description": "Which agencies are required for this job?",
+    "options": [
+     "Curiosity",
+     "Fulcrum",
+     "Plus Narrative"
+    ],
+    "required": true
+   },
+   {
+    "id": "uganda_agencies_required",
+    "internal_id": "432597994",
+    "label": "Uganda agencies required",
+    "type": "checklist_vertical",
+    "index": 63.0,
+    "description": "Which agencies are required for this job?",
+    "options": [
+     "Baitu Group",
+     "Creatabuzz",
+     "Curiosity",
+     "Events Warehouse",
+     "EXP",
+     "Fenon",
+     "Garage Group",
+     "Globtek",
+     "Internal MTN studio",
+     "Mediage",
+     "Moving Ads",
+     "Swivel",
+     "Talent Africa"
+    ],
+    "required": true
+   },
+   {
+    "id": "existing_assets_for_reference_or_use",
+    "internal_id": "432597995",
+    "label": "Existing assets for reference or use",
+    "type": "checklist_horizontal",
+    "index": 64.0,
+    "description": "Attach or link any existing assets for reference or use",
+    "options": [
+     "Attachment(s)",
+     "Free text / Link(s)"
+    ],
+    "required": false
+   },
+   {
+    "id": "existing_assets_for_reference_or_use_attachment_s",
+    "internal_id": "432597996",
+    "label": "Existing assets for reference or use attachment(s)",
+    "type": "attachment",
+    "index": 65.0,
+    "description": "Attach any existing assets for reference or use",
+    "options": [],
+    "required": true
+   },
+   {
+    "id": "existing_assets_for_reference_or_use_free_text_link_s",
+    "internal_id": "432597997",
+    "label": "Existing assets for reference or use free text / link(s)",
+    "type": "long_text",
+    "index": 66.0,
+    "description": "Add any existing assets as text or a link",
+    "options": [],
+    "required": true
+   }
+  ],
+  "phases": [
+   {
+    "id": "343906140",
+    "name": "Brief Backlog",
+    "index": 4.0,
+    "fields": [
+     {
+      "id": "statement_67b68b98_2c2c_4e16_9b05_06e161c19a1e",
+      "internal_id": "432597917",
+      "label": "Statement-67b68b98-2c2c-4e16-9b05-06e161c19a1e",
+      "type": "statement",
+      "index": 0.0,
+      "description": "<p class=\"text-editor-paragraph\" dir=\"ltr\"><b><strong class=\"text-editor-bold\" style=\"white-space: pre-wrap;\">Changes Required</strong></b><br></p><p class=\"text-editor-paragraph\" dir=\"ltr\"><b><strong class=\"text-editor-bold\" style=\"white-space: pre-wrap;\">Reviewer feedback</strong></b><span style=\"white-space: pre-wrap;\">: </span><span style=\"white-space: pre-wrap;\">{{phase343599624.field431842258}}</span></p>",
+      "options": [],
+      "required": null
+     },
+     {
+      "id": "statement_49d52ba3_4fec_4859_8c20_6f77e5d4543e",
+      "internal_id": "432597922",
+      "label": "Statement-49d52ba3-4fec-4859-8c20-6f77e5d4543e",
+      "type": "statement",
+      "index": 1.0,
+      "description": "<ul class=\"text-editor-list-ul\"><li value=\"1\" class=\"text-editor-list-item\" dir=\"ltr\"><b><strong class=\"text-editor-bold\" style=\"white-space: pre-wrap;\">Ensure all required fields and any outstanding information is fully completed.</strong></b></li><li value=\"2\" class=\"text-editor-list-item\" dir=\"ltr\"><b><strong class=\"text-editor-bold\" style=\"white-space: pre-wrap;\">Once completed, move the card to the Brief Review phase.</strong></b></li></ul>",
+      "options": [],
+      "required": false
+     }
+    ]
+   },
+   {
+    "id": "343906141",
+    "name": "Brief Review - 1st Approval",
+    "index": 5.0,
+    "fields": [
+     {
+      "id": "reviewer",
+      "internal_id": "432597911",
+      "label": "Reviewer",
+      "type": "assignee_select",
+      "index": -200.0,
+      "description": "",
+      "options": [],
+      "required": true
+     },
+     {
+      "id": "statement_9d73887e_895c_4989_8a1c_19f3d88a9618",
+      "internal_id": "432597913",
+      "label": "Statement-9d73887e-895c-4989-8a1c-19f3d88a9618",
+      "type": "statement",
+      "index": -100.0,
+      "description": "<p class=\"text-editor-paragraph\" dir=\"ltr\"><span style=\"background-color: rgb(255, 255, 255); color: rgb(75, 88, 99); font-size: 12px; white-space: pre-wrap;\">Review the brief below and&nbsp;</span><b><strong class=\"text-editor-bold\" style=\"background-color: rgb(255, 255, 255); color: rgb(75, 88, 99); font-size: 12px; white-space: pre-wrap;\">Accept</strong></b><span style=\"background-color: rgb(255, 255, 255); color: rgb(75, 88, 99); font-size: 12px; white-space: pre-wrap;\">,&nbsp;</span><b><strong class=\"text-editor-bold\" style=\"background-color: rgb(255, 255, 255); color: rgb(75, 88, 99); font-size: 12px; white-space: pre-wrap;\">Changes required</strong></b><span style=\"background-color: rgb(255, 255, 255); color: rgb(75, 88, 99); font-size: 12px; white-space: pre-wrap;\">&nbsp;or&nbsp;</span><b><strong class=\"text-editor-bold\" style=\"background-color: rgb(255, 255, 255); color: rgb(75, 88, 99); font-size: 12px; white-space: pre-wrap;\">Reject campaign</strong></b><span style=\"background-color: rgb(255, 255, 255); color: rgb(75, 88, 99); font-size: 12px; white-space: pre-wrap;\">&nbsp;the campaign, and provide feedback if needed.</span></p><p class=\"text-editor-paragraph\"><span style=\"white-space: pre-wrap;\">{{phase343906139.field432597910}}</span></p><p class=\"text-editor-paragraph\"><br></p>",
+      "options": [],
+      "required": null
+     },
+     {
+      "id": "job_review_decision",
+      "internal_id": "432597923",
+      "label": "Job review decision",
+      "type": "radio_horizontal",
+      "index": 1.0,
+      "description": "",
+      "options": [
+       "Approve",
+       "Changes required",
+       "Reject"
+      ],
+      "required": true
+     },
+     {
+      "id": "does_this_decision_need_a_second_approver",
+      "internal_id": "432696128",
+      "label": "Does this decision need a second approver?",
+      "type": "radio_horizontal",
+      "index": 1.5,
+      "description": "",
+      "options": [
+       "Yes",
+       "No"
+      ],
+      "required": true
+     },
+     {
+      "id": "review_feedback",
+      "internal_id": "432597925",
+      "label": "Review Feedback",
+      "type": "long_text",
+      "index": 2.0,
+      "description": "",
+      "options": [],
+      "required": true
+     }
+    ]
+   },
+   {
+    "id": "343906146",
+    "name": "Brief Review - 2nd Approval",
+    "index": 5.5,
+    "fields": [
+     {
+      "id": "statement_0cbea48b_9333_4693_b6a1_019bfd66f1e1",
+      "internal_id": "432597914",
+      "label": "Statement-0cbea48b-9333-4693-b6a1-019bfd66f1e1",
+      "type": "statement",
+      "index": -100.0,
+      "description": "<p class=\"text-editor-paragraph\" dir=\"ltr\"><b><strong class=\"text-editor-bold\" style=\"white-space: pre-wrap;\">Review brief below</strong></b></p><p class=\"text-editor-paragraph\" dir=\"ltr\"><span style=\"white-space: pre-wrap;\">{{phase343906139.field432597910}}</span></p><p class=\"text-editor-paragraph\"><br></p>",
+      "options": [],
+      "required": null
+     },
+     {
+      "id": "reviewer_1",
+      "internal_id": "432597918",
+      "label": "Reviewer",
+      "type": "assignee_select",
+      "index": 0.0,
+      "description": "",
+      "options": [],
+      "required": true
+     },
+     {
+      "id": "job_review_decision_1",
+      "internal_id": "432597998",
+      "label": "Job review decision",
+      "type": "radio_horizontal",
+      "index": 100.0,
+      "description": "",
+      "options": [
+       "Approve",
+       "Changes required",
+       "Rejected"
+      ],
+      "required": true
+     },
+     {
+      "id": "does_this_decision_need_a_third_approver",
+      "internal_id": "432696337",
+      "label": "Does this decision need a third approver?",
+      "type": "radio_horizontal",
+      "index": 150.0,
+      "description": "",
+      "options": [
+       "Yes",
+       "No"
+      ],
+      "required": true
+     },
+     {
+      "id": "feedback",
+      "internal_id": "432598000",
+      "label": "Feedback",
+      "type": "long_text",
+      "index": 200.0,
+      "description": "",
+      "options": [],
+      "required": true
+     }
+    ]
+   },
+   {
+    "id": "343906147",
+    "name": "Brief Review - 3rd Approval",
+    "index": 5.75,
+    "fields": [
+     {
+      "id": "statement_da7578df_8333_4bba_bc42_1344a0f467d9",
+      "internal_id": "432597915",
+      "label": "Statement-da7578df-8333-4bba-bc42-1344a0f467d9",
+      "type": "statement",
+      "index": -100.0,
+      "description": "<p class=\"text-editor-paragraph\" dir=\"ltr\"><b><strong class=\"text-editor-bold\" style=\"white-space: pre-wrap;\">Review brief below</strong></b></p><p class=\"text-editor-paragraph\" dir=\"ltr\"><span style=\"white-space: pre-wrap;\">{{phase343906139.field432597910}}</span></p><p class=\"text-editor-paragraph\"><br></p>",
+      "options": [],
+      "required": null
+     },
+     {
+      "id": "reviewer_2",
+      "internal_id": "432597919",
+      "label": "Reviewer",
+      "type": "assignee_select",
+      "index": 0.0,
+      "description": "",
+      "options": [],
+      "required": true
+     },
+     {
+      "id": "job_review_decision_2",
+      "internal_id": "432597999",
+      "label": "Job review decision",
+      "type": "radio_horizontal",
+      "index": 100.0,
+      "description": "",
+      "options": [
+       "Approve",
+       "Changes required",
+       "Rejected"
+      ],
+      "required": true
+     },
+     {
+      "id": "feedback_1",
+      "internal_id": "432598001",
+      "label": "Feedback",
+      "type": "long_text",
+      "index": 200.0,
+      "description": "",
+      "options": [],
+      "required": true
+     }
+    ]
+   },
+   {
+    "id": "343906142",
+    "name": "Brief Submitted",
+    "index": 6.0,
+    "fields": []
+   },
+   {
+    "id": "343906143",
+    "name": "Brief Updates",
+    "index": 12.0,
+    "fields": [
+     {
+      "id": "_",
+      "internal_id": "432597920",
+      "label": "_",
+      "type": "checklist_vertical",
+      "index": 0.0,
+      "description": "___\n## Make updates to the brief on the left hand side of the card, when you are ready, move the card back to Brief Submitted\n___",
+      "options": [],
+      "required": false
+     }
+    ]
+   },
+   {
+    "id": "343906144",
+    "name": "Completed",
+    "index": 13.0,
+    "fields": []
+   },
+   {
+    "id": "343906145",
+    "name": "Cancelled",
+    "index": 14.0,
+    "fields": []
+   },
+   {
+    "id": "343927931",
+    "name": "Submit Decision",
+    "index": 15.0,
+    "fields": []
+   }
+  ]
+ },
+ "table": {
+  "id": "mOUzRnnK",
+  "name": "Campaign Planning DB",
+  "table_fields": [
+   {
+    "id": "campaign_owner",
+    "internal_id": null,
+    "label": "Campaign owner",
+    "type": "assignee_select",
+    "index": 0.0,
+    "description": null,
+    "options": []
+   },
+   {
+    "id": "field",
+    "internal_id": null,
+    "label": "\u200e \u200e \u200e \u200e \u200e ",
+    "type": "checklist_vertical",
+    "index": 1.0,
+    "description": "___\n## Campaign Information\n___",
+    "options": []
+   },
+   {
+    "id": "campaign_name",
+    "internal_id": null,
+    "label": "Campaign name",
+    "type": "short_text",
+    "index": 2.0,
+    "description": "The name of the campaign",
+    "options": []
+   },
+   {
+    "id": "originating_opco",
+    "internal_id": null,
+    "label": "Originating OpCo",
+    "type": "select",
+    "index": 3.0,
+    "description": "Which OpCo does this campaign belong to?",
+    "options": [
+     "Uganda",
+     "Zambia"
+    ]
+   },
+   {
+    "id": "segment_business_unit",
+    "internal_id": null,
+    "label": "Segment/business unit",
+    "type": "select",
+    "index": 4.0,
+    "description": "Which segment or business unit does this campaign sit under?",
+    "options": [
+     "MFS",
+     "GSM",
+     "INFRACO"
+    ]
+   },
+   {
+    "id": "uganda_division",
+    "internal_id": null,
+    "label": "Uganda division",
+    "type": "select",
+    "index": 5.0,
+    "description": "Which Uganda division does this campaign belong to?",
+    "options": [
+     "Business Intelligence",
+     "Capital Projects",
+     "CEO Office",
+     "Corporate Services",
+     "Customer Experience",
+     "Enterprise Business Unit",
+     "Finance",
+     "Growth and New Business",
+     "Human Resource",
+     "Infraco",
+     "Internal Audit",
+     "Marketing",
+     "MFS",
+     "Risk and Compliance",
+     "Sales and Distribution",
+     "Technology"
+    ]
+   },
+   {
+    "id": "uganda_marketing_division",
+    "internal_id": null,
+    "label": "Uganda marketing division",
+    "type": "select",
+    "index": 6.0,
+    "description": "Which Uganda marketing sub-division?",
+    "options": [
+     "Brand & Communications",
+     "Consumer Segments ",
+     "CVM and loyalty",
+     "Digital services (RMS)",
+     "Roaming & Carrier Services"
+    ]
+   },
+   {
+    "id": "uganda_finance_division",
+    "internal_id": null,
+    "label": "Uganda finance division",
+    "type": "select",
+    "index": 7.0,
+    "description": "Which Uganda finance sub-division?",
+    "options": [
+     "Supply Chain",
+     "Investor Relations",
+     "Finance Operations"
+    ]
+   },
+   {
+    "id": "uganda_enterprise_division",
+    "internal_id": null,
+    "label": "Uganda enterprise division",
+    "type": "select",
+    "index": 8.0,
+    "description": "Which Uganda enterprise sub-division?",
+    "options": [
+     "Large Enterprise",
+     "SME",
+     "Government"
+    ]
+   },
+   {
+    "id": "uganda_technology_division",
+    "internal_id": null,
+    "label": "Uganda technology division",
+    "type": "select",
+    "index": 9.0,
+    "description": "Which Uganda technology sub-division?",
+    "options": [
+     "IT",
+     "Network",
+     "Nooc"
+    ]
+   },
+   {
+    "id": "uganda_corporate_services_division",
+    "internal_id": null,
+    "label": "Uganda Corporate services division",
+    "type": "select",
+    "index": 10.0,
+    "description": "Which Uganda corporate services sub-division?",
+    "options": [
+     "Legal and Regulatory",
+     "MTN Foundation"
+    ]
+   },
+   {
+    "id": "uganda_business_intelligence_division",
+    "internal_id": null,
+    "label": "Uganda business intelligence division",
+    "type": "select",
+    "index": 11.0,
+    "description": "Which Uganda business intelligence sub-division?",
+    "options": [
+     "Research"
+    ]
+   },
+   {
+    "id": "uganda_products",
+    "internal_id": null,
+    "label": "Uganda products",
+    "type": "select",
+    "index": 12.0,
+    "description": "Which Uganda product does this campaign relate to?",
+    "options": [
+     "TBC"
+    ]
+   },
+   {
+    "id": "zambia_division",
+    "internal_id": null,
+    "label": "Zambia division",
+    "type": "select",
+    "index": 13.0,
+    "description": "Which Zambia division does this campaign belong to?",
+    "options": [
+     "Brand and Communications",
+     "CEO's Office",
+     "Consumer Segments",
+     "Corporate Services",
+     "Customer Experience (CEX)",
+     "Customer Value Management (CVM)",
+     "DACOE",
+     "Digital and Rich Media Services",
+     "Enterprise Business Units (EBU)",
+     "Fintech",
+     "Human Resources",
+     "Internal Audit",
+     "IT",
+     "MTN Home",
+     "Networks",
+     "Pricing",
+     "Risk and Compliance",
+     "Sales and Distribution"
+    ]
+   },
+   {
+    "id": "zambia_products",
+    "internal_id": null,
+    "label": "Zambia products",
+    "type": "checklist_vertical",
+    "index": 14.0,
+    "description": null,
+    "options": [
+     "Brand campaign",
+     "Sponsorship and events",
+     "Retail and trade",
+     "Digital services",
+     "Rich media services",
+     "Segments youth",
+     "Segments mass",
+     "Segments HVC",
+     "Devices",
+     "Roaming",
+     "Customer value management (CVM)",
+     "Customer experience (CEX)",
+     "SIM registration",
+     "Digital transformation",
+     "Digital transformation \u2013 high volume",
+     "Training",
+     "Customer experience",
+     "Pricing",
+     "Internal communications",
+     "Ad-hoc",
+     "MTN Home wireless",
+     "MTN Home fibre",
+     "EBU"
+    ]
+   },
+   {
+    "id": "tier",
+    "internal_id": null,
+    "label": "Tier",
+    "type": "select",
+    "index": 15.0,
+    "description": "Campaign tier / priority level",
+    "options": [
+     "Tier 1",
+     "Tier 2",
+     "Tier 3"
+    ]
+   },
+   {
+    "id": "field_1",
+    "internal_id": null,
+    "label": "\u200e\u200e",
+    "type": "checklist_vertical",
+    "index": 16.0,
+    "description": "___\n### Campaign Timelines\n___",
+    "options": []
+   },
+   {
+    "id": "campaign_go_live_date",
+    "internal_id": null,
+    "label": "Campaign go live date",
+    "type": "date",
+    "index": 17.0,
+    "description": "When the campaign goes live",
+    "options": []
+   },
+   {
+    "id": "campaign_end_date",
+    "internal_id": null,
+    "label": "Campaign end date",
+    "type": "date",
+    "index": 18.0,
+    "description": "When the campaign ends",
+    "options": []
+   },
+   {
+    "id": "product_go_live_date",
+    "internal_id": null,
+    "label": "Product go live date",
+    "type": "date",
+    "index": 19.0,
+    "description": "When the product goes live",
+    "options": []
+   },
+   {
+    "id": "key_milestones",
+    "internal_id": null,
+    "label": "Key Milestones",
+    "type": "long_text",
+    "index": 20.0,
+    "description": "Key dates and milestones to be noted",
+    "options": []
+   },
+   {
+    "id": "field_2",
+    "internal_id": null,
+    "label": "\u200e \u200e ",
+    "type": "checklist_vertical",
+    "index": 21.0,
+    "description": "___\n## Campaign Details\n___",
+    "options": []
+   },
+   {
+    "id": "campaign_budget",
+    "internal_id": null,
+    "label": "Campaign budget",
+    "type": "currency",
+    "index": 22.0,
+    "description": null,
+    "options": []
+   },
+   {
+    "id": "strategic_pillar",
+    "internal_id": null,
+    "label": "Strategic pillar",
+    "type": "checklist_vertical",
+    "index": 23.0,
+    "description": "Which strategic pillar does this campaign support?",
+    "options": [
+     "Positioning",
+     "Promotion",
+     "Proposition"
+    ]
+   },
+   {
+    "id": "campaign_objective",
+    "internal_id": null,
+    "label": "Campaign objective",
+    "type": "long_text",
+    "index": 24.0,
+    "description": "What is the goal or purpose of this campaign? What are we trying to achieve?",
+    "options": []
+   },
+   {
+    "id": "campaign_background",
+    "internal_id": null,
+    "label": "Campaign background",
+    "type": "long_text",
+    "index": 25.0,
+    "description": "Context leading up to why the intervention is necessary. What's the business problem, and what's the overall picture?",
+    "options": []
+   },
+   {
+    "id": "key_message",
+    "internal_id": null,
+    "label": "Key message",
+    "type": "long_text",
+    "index": 26.0,
+    "description": "What's the most important thing to say to achieve our objective?",
+    "options": []
+   },
+   {
+    "id": "what_problem_are_we_solving_for_the_customer",
+    "internal_id": null,
+    "label": "What problem are we solving for the customer",
+    "type": "long_text",
+    "index": 27.0,
+    "description": "The customer problem this campaign is solving",
+    "options": []
+   },
+   {
+    "id": "target_audience",
+    "internal_id": null,
+    "label": "Target audience",
+    "type": "checklist_vertical",
+    "index": 28.0,
+    "description": "Who is our primary and secondary audience?",
+    "options": [
+     "Government / public sector",
+     "High value",
+     "Large corporates",
+     "Mass",
+     "SMEs",
+     "Youth",
+     "MTN staff",
+     "Other"
+    ]
+   },
+   {
+    "id": "target_audience_core",
+    "internal_id": null,
+    "label": "Target audience core",
+    "type": "checklist_vertical",
+    "index": 29.0,
+    "description": "Which core audience segment(s) are we targeting?",
+    "options": [
+     "Youth",
+     "Mass",
+     "High Value",
+     "SMEs",
+     "Large Corporates",
+     "Government / Public Sector"
+    ]
+   },
+   {
+    "id": "target_audience_internal",
+    "internal_id": null,
+    "label": "Target audience internal",
+    "type": "checklist_vertical",
+    "index": 30.0,
+    "description": "Which internal audience(s) are we targeting?",
+    "options": [
+     "Agents",
+     "MTN Staff",
+     "Merchants",
+     "Dealers"
+    ]
+   },
+   {
+    "id": "target_audience_other",
+    "internal_id": null,
+    "label": "Target audience - other",
+    "type": "checklist_vertical",
+    "index": 31.0,
+    "description": "Which other audience(s) are we targeting?",
+    "options": [
+     "Feature Phone Users",
+     "Smartphone Users",
+     "MoMo Registered Users",
+     "MoMo Active Users",
+     "NGOs / Development Organizations",
+     "Heavy Data Users",
+     "Light Data Users",
+     "Gamers",
+     "Churned Customers (Win-back)",
+     "Startups / Tech Businesses",
+     "Low Usage Customers",
+     "New target audience"
+    ]
+   },
+   {
+    "id": "new_target_audience",
+    "internal_id": null,
+    "label": "New target audience",
+    "type": "long_text",
+    "index": 32.0,
+    "description": null,
+    "options": []
+   },
+   {
+    "id": "target_audience_additional_information",
+    "internal_id": null,
+    "label": "Target audience additional information",
+    "type": "long_text",
+    "index": 33.0,
+    "description": "Any further detail on the target audience",
+    "options": []
+   },
+   {
+    "id": "field_3",
+    "internal_id": null,
+    "label": "\u200e \u200e \u200e ",
+    "type": "checklist_vertical",
+    "index": 34.0,
+    "description": "___\n## Campaign KPI's\n___",
+    "options": []
+   },
+   {
+    "id": "kpi_pillar",
+    "internal_id": null,
+    "label": "KPI pillar",
+    "type": "checklist_vertical",
+    "index": 35.0,
+    "description": "How will we measure success?",
+    "options": [
+     "Awareness",
+     "Customer Acquisition & Growth",
+     "Digital Communication",
+     "Brand Desire",
+     "Net Promoter Score (NPS)"
+    ]
+   },
+   {
+    "id": "awareness_kpi",
+    "internal_id": null,
+    "label": "Awareness KPI",
+    "type": "checklist_vertical",
+    "index": 36.0,
+    "description": "Which awareness KPI(s) are we measuring?",
+    "options": [
+     "Reach",
+     "TOMA",
+     "Frequency",
+     "TOMBA",
+     "Ad Recall",
+     "Recommendation"
+    ]
+   },
+   {
+    "id": "acquisition_growth_kpi",
+    "internal_id": null,
+    "label": "Acquisition & Growth KPI",
+    "type": "checklist_vertical",
+    "index": 37.0,
+    "description": "Which acquisition & growth KPI(s) are we measuring?",
+    "options": [
+     "New Subscribers",
+     "Market Share Growth",
+     "Product Uptake",
+     "Data Bundle Purchases",
+     "Voice Usage Growth",
+     "Churn Rate Reduction",
+     "Mobile Money Transactions"
+    ]
+   },
+   {
+    "id": "digital_communication_kpi",
+    "internal_id": null,
+    "label": "Digital Communication KPI",
+    "type": "checklist_vertical",
+    "index": 38.0,
+    "description": "Which digital communication KPI(s) are we measuring?",
+    "options": [
+     "Website Traffic",
+     "App Installs",
+     "App Active Users",
+     "Engagement",
+     "Engagement Rate",
+     "Video Views",
+     "Video Completion Rate",
+     "Time Spent on Content",
+     "Sentiment",
+     "Conversion",
+     "Conversion Rate",
+     "Lead Generation Volume",
+     "Sales Revenue"
+    ]
+   },
+   {
+    "id": "brand_desire_kpi",
+    "internal_id": null,
+    "label": "Brand Desire KPI",
+    "type": "checklist_vertical",
+    "index": 39.0,
+    "description": "Which brand desire KPI(s) are we measuring?",
+    "options": [
+     "Overall Desire",
+     "Youth Contribution",
+     "Data Contribution",
+     "MoMo Contribution"
+    ]
+   },
+   {
+    "id": "nps_kpi",
+    "internal_id": null,
+    "label": "NPS KPI",
+    "type": "checklist_vertical",
+    "index": 40.0,
+    "description": "Which NPS KPI(s) are we measuring?",
+    "options": [
+     "Brand NPS",
+     "Overall NPS",
+     "Product NPS"
+    ]
+   },
+   {
+    "id": "kpi_additional_information",
+    "internal_id": null,
+    "label": "KPI additional information",
+    "type": "long_text",
+    "index": 41.0,
+    "description": "Any additional detail on the campaign KPIs",
+    "options": []
+   },
+   {
+    "id": "field_4",
+    "internal_id": null,
+    "label": "\u200e \u200e \u200e \u200e ",
+    "type": "checklist_vertical",
+    "index": 42.0,
+    "description": "___\n## Supporting Information\n___",
+    "options": []
+   },
+   {
+    "id": "supporting_documentation",
+    "internal_id": null,
+    "label": "Supporting documentation",
+    "type": "checklist_horizontal",
+    "index": 43.0,
+    "description": null,
+    "options": [
+     "Attachment(s)",
+     "Free text / Link(s)"
+    ]
+   },
+   {
+    "id": "supporting_documents_attachment_s",
+    "internal_id": null,
+    "label": "Supporting documents attachment(s)",
+    "type": "attachment",
+    "index": 44.0,
+    "description": "Attach any supporting documents",
+    "options": []
+   },
+   {
+    "id": "supporting_documents_free_text_link_s",
+    "internal_id": null,
+    "label": "Supporting documents free text / link(s)",
+    "type": "long_text",
+    "index": 45.0,
+    "description": "Add any supporting documents as text or a link",
+    "options": []
+   },
+   {
+    "id": "campaign_attached",
+    "internal_id": null,
+    "label": "Campaign attached",
+    "type": "attachment",
+    "index": 46.0,
+    "description": null,
+    "options": []
+   },
+   {
+    "id": "approver_email",
+    "internal_id": null,
+    "label": "Approver email",
+    "type": "email",
+    "index": 47.0,
+    "description": null,
+    "options": []
+   },
+   {
+    "id": "zambia_marketing_division",
+    "internal_id": null,
+    "label": "Zambia marketing division",
+    "type": "select",
+    "index": 48.0,
+    "description": null,
+    "options": [
+     "Brand and communications",
+     "Consumer segments",
+     "Customer experience (CEX)",
+     "Customer value management (CVM)",
+     "DACOE",
+     "Digital and rich media Services",
+     "Pricing"
+    ]
+   },
+   {
+    "id": "zambia_enterprise_business_unit_ebu",
+    "internal_id": null,
+    "label": "Zambia enterprise business unit (EBU)",
+    "type": "select",
+    "index": 49.0,
+    "description": null,
+    "options": [
+     "Government",
+     "Large enterprises (LE)",
+     "Small and medium enterprises (SME)"
+    ]
+   },
+   {
+    "id": "zambia_mtn_home_division",
+    "internal_id": null,
+    "label": "Zambia MTN home division",
+    "type": "select",
+    "index": 50.0,
+    "description": null,
+    "options": [
+     "Fibre to the Home (FTTH)",
+     "Fixed Wireless Access (FWA)"
+    ]
+   },
+   {
+    "id": "zambia_finance_division",
+    "internal_id": null,
+    "label": "Zambia finance division",
+    "type": "select",
+    "index": 51.0,
+    "description": null,
+    "options": [
+     "Procurement",
+     "Facilities",
+     "Operations",
+     "Commercial Finance",
+     "Revenue Assurance and Fraud Litigation"
+    ]
+   },
+   {
+    "id": "zambia_technology_division",
+    "internal_id": null,
+    "label": "Zambia technology division",
+    "type": "select",
+    "index": 52.0,
+    "description": null,
+    "options": [
+     "IT",
+     "Networks"
+    ]
+   },
+   {
+    "id": "zambia_corporate_services",
+    "internal_id": null,
+    "label": "Zambia corporate services",
+    "type": "select",
+    "index": 53.0,
+    "description": null,
+    "options": [
+     "Legal",
+     "MTN Foundation"
+    ]
+   },
+   {
+    "id": "kpi_pillar_other",
+    "internal_id": null,
+    "label": "KPI pillar other",
+    "type": "short_text",
+    "index": 54.0,
+    "description": "Please specify the other KPI pillar",
+    "options": []
+   },
+   {
+    "id": "awareness_kpi_other",
+    "internal_id": null,
+    "label": "Awareness KPI - other",
+    "type": "short_text",
+    "index": 55.0,
+    "description": "Please specify the other \"Awareness\" KPI's",
+    "options": []
+   },
+   {
+    "id": "acquisition_and_growth_kpi_other",
+    "internal_id": null,
+    "label": "Acquisition and growth KPI - other",
+    "type": "short_text",
+    "index": 56.0,
+    "description": "Please specify the other acquisition & growth KPI",
+    "options": []
+   },
+   {
+    "id": "digital_communication_kpi_other",
+    "internal_id": null,
+    "label": "Digital communication KPI - other",
+    "type": "short_text",
+    "index": 57.0,
+    "description": "Please specify the other digital communication KPI",
+    "options": []
+   },
+   {
+    "id": "brand_desire_kpi_other",
+    "internal_id": null,
+    "label": "Brand desire KPI - other",
+    "type": "short_text",
+    "index": 58.0,
+    "description": "Please specify the other brand desire KPI",
+    "options": []
+   },
+   {
+    "id": "nps_kpi_other",
+    "internal_id": null,
+    "label": "NPS KPI other",
+    "type": "short_text",
+    "index": 59.0,
+    "description": null,
+    "options": []
+   }
+  ]
+ },
+ "campaign_record": {
+  "id": "9911",
+  "title": "AFCON Qualifiers 2026",
+  "table": {
+   "id": "mOUzRnnK",
+   "name": "Campaign Planning DB"
+  },
+  "record_fields": [
+   {
+    "name": "Campaign owner",
+    "value": "[\"Jess Shepherd\"]",
+    "array_value": [
+     "Jess Shepherd"
+    ],
+    "field": {
+     "id": "campaign_owner",
+     "internal_id": null,
+     "label": "Campaign owner",
+     "type": "assignee_select"
+    }
+   },
+   {
+    "name": "Campaign name",
+    "value": "Campaign name value",
+    "array_value": null,
+    "field": {
+     "id": "campaign_name",
+     "internal_id": null,
+     "label": "Campaign name",
+     "type": "short_text"
+    }
+   },
+   {
+    "name": "Originating OpCo",
+    "value": "Uganda",
+    "array_value": null,
+    "field": {
+     "id": "originating_opco",
+     "internal_id": null,
+     "label": "Originating OpCo",
+     "type": "select"
+    }
+   },
+   {
+    "name": "Segment/business unit",
+    "value": "MFS",
+    "array_value": null,
+    "field": {
+     "id": "segment_business_unit",
+     "internal_id": null,
+     "label": "Segment/business unit",
+     "type": "select"
+    }
+   },
+   {
+    "name": "Uganda division",
+    "value": "Business Intelligence",
+    "array_value": null,
+    "field": {
+     "id": "uganda_division",
+     "internal_id": null,
+     "label": "Uganda division",
+     "type": "select"
+    }
+   },
+   {
+    "name": "Uganda marketing division",
+    "value": "Brand & Communications",
+    "array_value": null,
+    "field": {
+     "id": "uganda_marketing_division",
+     "internal_id": null,
+     "label": "Uganda marketing division",
+     "type": "select"
+    }
+   },
+   {
+    "name": "Uganda finance division",
+    "value": "Supply Chain",
+    "array_value": null,
+    "field": {
+     "id": "uganda_finance_division",
+     "internal_id": null,
+     "label": "Uganda finance division",
+     "type": "select"
+    }
+   },
+   {
+    "name": "Uganda enterprise division",
+    "value": "Large Enterprise",
+    "array_value": null,
+    "field": {
+     "id": "uganda_enterprise_division",
+     "internal_id": null,
+     "label": "Uganda enterprise division",
+     "type": "select"
+    }
+   },
+   {
+    "name": "Uganda technology division",
+    "value": "IT",
+    "array_value": null,
+    "field": {
+     "id": "uganda_technology_division",
+     "internal_id": null,
+     "label": "Uganda technology division",
+     "type": "select"
+    }
+   },
+   {
+    "name": "Uganda Corporate services division",
+    "value": "Legal and Regulatory",
+    "array_value": null,
+    "field": {
+     "id": "uganda_corporate_services_division",
+     "internal_id": null,
+     "label": "Uganda Corporate services division",
+     "type": "select"
+    }
+   },
+   {
+    "name": "Uganda business intelligence division",
+    "value": "Research",
+    "array_value": null,
+    "field": {
+     "id": "uganda_business_intelligence_division",
+     "internal_id": null,
+     "label": "Uganda business intelligence division",
+     "type": "select"
+    }
+   },
+   {
+    "name": "Uganda products",
+    "value": "TBC",
+    "array_value": null,
+    "field": {
+     "id": "uganda_products",
+     "internal_id": null,
+     "label": "Uganda products",
+     "type": "select"
+    }
+   },
+   {
+    "name": "Zambia division",
+    "value": "Brand and Communications",
+    "array_value": null,
+    "field": {
+     "id": "zambia_division",
+     "internal_id": null,
+     "label": "Zambia division",
+     "type": "select"
+    }
+   },
+   {
+    "name": "Zambia products",
+    "value": "[\"Brand campaign\", \"Sponsorship and events\"]",
+    "array_value": [
+     "Brand campaign",
+     "Sponsorship and events"
+    ],
+    "field": {
+     "id": "zambia_products",
+     "internal_id": null,
+     "label": "Zambia products",
+     "type": "checklist_vertical"
+    }
+   },
+   {
+    "name": "Tier",
+    "value": "Tier 1",
+    "array_value": null,
+    "field": {
+     "id": "tier",
+     "internal_id": null,
+     "label": "Tier",
+     "type": "select"
+    }
+   },
+   {
+    "name": "Campaign go live date",
+    "value": "2026-10-05",
+    "array_value": null,
+    "field": {
+     "id": "campaign_go_live_date",
+     "internal_id": null,
+     "label": "Campaign go live date",
+     "type": "date"
+    }
+   },
+   {
+    "name": "Campaign end date",
+    "value": "2026-09-02",
+    "array_value": null,
+    "field": {
+     "id": "campaign_end_date",
+     "internal_id": null,
+     "label": "Campaign end date",
+     "type": "date"
+    }
+   },
+   {
+    "name": "Product go live date",
+    "value": "2026-09-02",
+    "array_value": null,
+    "field": {
+     "id": "product_go_live_date",
+     "internal_id": null,
+     "label": "Product go live date",
+     "type": "date"
+    }
+   },
+   {
+    "name": "Key Milestones",
+    "value": "- Concept lock 24 Aug\n- Shoot 02 Sep\n- First revert 09 Sep\n- Go live 20 Sep",
+    "array_value": null,
+    "field": {
+     "id": "key_milestones",
+     "internal_id": null,
+     "label": "Key Milestones",
+     "type": "long_text"
+    }
+   },
+   {
+    "name": "Campaign budget",
+    "value": "4500000",
+    "array_value": null,
+    "field": {
+     "id": "campaign_budget",
+     "internal_id": null,
+     "label": "Campaign budget",
+     "type": "currency"
+    }
+   },
+   {
+    "name": "Strategic pillar",
+    "value": "[\"Positioning\", \"Promotion\"]",
+    "array_value": [
+     "Positioning",
+     "Promotion"
+    ],
+    "field": {
+     "id": "strategic_pillar",
+     "internal_id": null,
+     "label": "Strategic pillar",
+     "type": "checklist_vertical"
+    }
+   },
+   {
+    "name": "Campaign objective",
+    "value": "Grow MoMo active users in Uganda by 18% across Q3 by making the Payday Boost proposition unmissable in-market.",
+    "array_value": null,
+    "field": {
+     "id": "campaign_objective",
+     "internal_id": null,
+     "label": "Campaign objective",
+     "type": "long_text"
+    }
+   },
+   {
+    "name": "Campaign background",
+    "value": "MoMo penetration has plateaued in the 25-34 urban segment.\nCompetitor wallets have moved aggressively on merchant cashback since March.",
+    "array_value": null,
+    "field": {
+     "id": "campaign_background",
+     "internal_id": null,
+     "label": "Campaign background",
+     "type": "long_text"
+    }
+   },
+   {
+    "name": "Key message",
+    "value": "Get more from every payday with MTN MoMo.",
+    "array_value": null,
+    "field": {
+     "id": "key_message",
+     "internal_id": null,
+     "label": "Key message",
+     "type": "long_text"
+    }
+   },
+   {
+    "name": "What problem are we solving for the customer",
+    "value": "Customers run out of airtime and data before month end and do not associate MoMo with day-to-day value.",
+    "array_value": null,
+    "field": {
+     "id": "what_problem_are_we_solving_for_the_customer",
+     "internal_id": null,
+     "label": "What problem are we solving for the customer",
+     "type": "long_text"
+    }
+   },
+   {
+    "name": "Target audience",
+    "value": "[\"Government / public sector\", \"High value\"]",
+    "array_value": [
+     "Government / public sector",
+     "High value"
+    ],
+    "field": {
+     "id": "target_audience",
+     "internal_id": null,
+     "label": "Target audience",
+     "type": "checklist_vertical"
+    }
+   },
+   {
+    "name": "Target audience core",
+    "value": "[\"Youth\", \"Mass\"]",
+    "array_value": [
+     "Youth",
+     "Mass"
+    ],
+    "field": {
+     "id": "target_audience_core",
+     "internal_id": null,
+     "label": "Target audience core",
+     "type": "checklist_vertical"
+    }
+   },
+   {
+    "name": "Target audience internal",
+    "value": "[\"Agents\", \"MTN Staff\"]",
+    "array_value": [
+     "Agents",
+     "MTN Staff"
+    ],
+    "field": {
+     "id": "target_audience_internal",
+     "internal_id": null,
+     "label": "Target audience internal",
+     "type": "checklist_vertical"
+    }
+   },
+   {
+    "name": "Target audience - other",
+    "value": "[\"Feature Phone Users\", \"Smartphone Users\"]",
+    "array_value": [
+     "Feature Phone Users",
+     "Smartphone Users"
+    ],
+    "field": {
+     "id": "target_audience_other",
+     "internal_id": null,
+     "label": "Target audience - other",
+     "type": "checklist_vertical"
+    }
+   },
+   {
+    "name": "New target audience",
+    "value": "Placeholder copy for New target audience.",
+    "array_value": null,
+    "field": {
+     "id": "new_target_audience",
+     "internal_id": null,
+     "label": "New target audience",
+     "type": "long_text"
+    }
+   },
+   {
+    "name": "Target audience additional information",
+    "value": "Skew male 18-34 for the sport-led executions; keep the retail cutdowns audience-neutral.",
+    "array_value": null,
+    "field": {
+     "id": "target_audience_additional_information",
+     "internal_id": null,
+     "label": "Target audience additional information",
+     "type": "long_text"
+    }
+   },
+   {
+    "name": "KPI pillar",
+    "value": "[\"Awareness\", \"Customer Acquisition & Growth\"]",
+    "array_value": [
+     "Awareness",
+     "Customer Acquisition & Growth"
+    ],
+    "field": {
+     "id": "kpi_pillar",
+     "internal_id": null,
+     "label": "KPI pillar",
+     "type": "checklist_vertical"
+    }
+   },
+   {
+    "name": "Awareness KPI",
+    "value": "[\"Reach\", \"TOMA\"]",
+    "array_value": [
+     "Reach",
+     "TOMA"
+    ],
+    "field": {
+     "id": "awareness_kpi",
+     "internal_id": null,
+     "label": "Awareness KPI",
+     "type": "checklist_vertical"
+    }
+   },
+   {
+    "name": "Acquisition & Growth KPI",
+    "value": "[\"New Subscribers\", \"Market Share Growth\"]",
+    "array_value": [
+     "New Subscribers",
+     "Market Share Growth"
+    ],
+    "field": {
+     "id": "acquisition_growth_kpi",
+     "internal_id": null,
+     "label": "Acquisition & Growth KPI",
+     "type": "checklist_vertical"
+    }
+   },
+   {
+    "name": "Digital Communication KPI",
+    "value": "[\"Website Traffic\", \"App Installs\"]",
+    "array_value": [
+     "Website Traffic",
+     "App Installs"
+    ],
+    "field": {
+     "id": "digital_communication_kpi",
+     "internal_id": null,
+     "label": "Digital Communication KPI",
+     "type": "checklist_vertical"
+    }
+   },
+   {
+    "name": "Brand Desire KPI",
+    "value": "[\"Overall Desire\", \"Youth Contribution\"]",
+    "array_value": [
+     "Overall Desire",
+     "Youth Contribution"
+    ],
+    "field": {
+     "id": "brand_desire_kpi",
+     "internal_id": null,
+     "label": "Brand Desire KPI",
+     "type": "checklist_vertical"
+    }
+   },
+   {
+    "name": "NPS KPI",
+    "value": "[\"Brand NPS\", \"Overall NPS\"]",
+    "array_value": [
+     "Brand NPS",
+     "Overall NPS"
+    ],
+    "field": {
+     "id": "nps_kpi",
+     "internal_id": null,
+     "label": "NPS KPI",
+     "type": "checklist_vertical"
+    }
+   },
+   {
+    "name": "KPI additional information",
+    "value": "Report weekly against the AFCON fixture calendar, not calendar weeks.",
+    "array_value": null,
+    "field": {
+     "id": "kpi_additional_information",
+     "internal_id": null,
+     "label": "KPI additional information",
+     "type": "long_text"
+    }
+   },
+   {
+    "name": "Supporting documentation",
+    "value": "[\"Attachment(s)\", \"Free text / Link(s)\"]",
+    "array_value": [
+     "Attachment(s)",
+     "Free text / Link(s)"
+    ],
+    "field": {
+     "id": "supporting_documentation",
+     "internal_id": null,
+     "label": "Supporting documentation",
+     "type": "checklist_horizontal"
+    }
+   },
+   {
+    "name": "Supporting documents attachment(s)",
+    "value": "[\"orgs/302505741/uploads/AFCON_reference_pack.pdf\"]",
+    "array_value": [
+     "orgs/302505741/uploads/AFCON_reference_pack.pdf"
+    ],
+    "field": {
+     "id": "supporting_documents_attachment_s",
+     "internal_id": null,
+     "label": "Supporting documents attachment(s)",
+     "type": "attachment"
+    }
+   },
+   {
+    "name": "Supporting documents free text / link(s)",
+    "value": "Signed sponsorship agreement and rate card.",
+    "array_value": null,
+    "field": {
+     "id": "supporting_documents_free_text_link_s",
+     "internal_id": null,
+     "label": "Supporting documents free text / link(s)",
+     "type": "long_text"
+    }
+   },
+   {
+    "name": "Campaign attached",
+    "value": "[\"orgs/302505741/uploads/AFCON_reference_pack.pdf\"]",
+    "array_value": [
+     "orgs/302505741/uploads/AFCON_reference_pack.pdf"
+    ],
+    "field": {
+     "id": "campaign_attached",
+     "internal_id": null,
+     "label": "Campaign attached",
+     "type": "attachment"
+    }
+   },
+   {
+    "name": "Approver email",
+    "value": "approver@mtn.example",
+    "array_value": null,
+    "field": {
+     "id": "approver_email",
+     "internal_id": null,
+     "label": "Approver email",
+     "type": "email"
+    }
+   },
+   {
+    "name": "Zambia marketing division",
+    "value": "Brand and communications",
+    "array_value": null,
+    "field": {
+     "id": "zambia_marketing_division",
+     "internal_id": null,
+     "label": "Zambia marketing division",
+     "type": "select"
+    }
+   },
+   {
+    "name": "Zambia enterprise business unit (EBU)",
+    "value": "Government",
+    "array_value": null,
+    "field": {
+     "id": "zambia_enterprise_business_unit_ebu",
+     "internal_id": null,
+     "label": "Zambia enterprise business unit (EBU)",
+     "type": "select"
+    }
+   },
+   {
+    "name": "Zambia MTN home division",
+    "value": "Fibre to the Home (FTTH)",
+    "array_value": null,
+    "field": {
+     "id": "zambia_mtn_home_division",
+     "internal_id": null,
+     "label": "Zambia MTN home division",
+     "type": "select"
+    }
+   },
+   {
+    "name": "Zambia finance division",
+    "value": "Procurement",
+    "array_value": null,
+    "field": {
+     "id": "zambia_finance_division",
+     "internal_id": null,
+     "label": "Zambia finance division",
+     "type": "select"
+    }
+   },
+   {
+    "name": "Zambia technology division",
+    "value": "IT",
+    "array_value": null,
+    "field": {
+     "id": "zambia_technology_division",
+     "internal_id": null,
+     "label": "Zambia technology division",
+     "type": "select"
+    }
+   },
+   {
+    "name": "Zambia corporate services",
+    "value": "Legal",
+    "array_value": null,
+    "field": {
+     "id": "zambia_corporate_services",
+     "internal_id": null,
+     "label": "Zambia corporate services",
+     "type": "select"
+    }
+   },
+   {
+    "name": "KPI pillar other",
+    "value": "KPI pillar other value",
+    "array_value": null,
+    "field": {
+     "id": "kpi_pillar_other",
+     "internal_id": null,
+     "label": "KPI pillar other",
+     "type": "short_text"
+    }
+   },
+   {
+    "name": "Awareness KPI - other",
+    "value": "Awareness KPI - other value",
+    "array_value": null,
+    "field": {
+     "id": "awareness_kpi_other",
+     "internal_id": null,
+     "label": "Awareness KPI - other",
+     "type": "short_text"
+    }
+   },
+   {
+    "name": "Acquisition and growth KPI - other",
+    "value": "Acquisition and growth KPI - other value",
+    "array_value": null,
+    "field": {
+     "id": "acquisition_and_growth_kpi_other",
+     "internal_id": null,
+     "label": "Acquisition and growth KPI - other",
+     "type": "short_text"
+    }
+   },
+   {
+    "name": "Digital communication KPI - other",
+    "value": "Digital communication KPI - other value",
+    "array_value": null,
+    "field": {
+     "id": "digital_communication_kpi_other",
+     "internal_id": null,
+     "label": "Digital communication KPI - other",
+     "type": "short_text"
+    }
+   },
+   {
+    "name": "Brand desire KPI - other",
+    "value": "Brand desire KPI - other value",
+    "array_value": null,
+    "field": {
+     "id": "brand_desire_kpi_other",
+     "internal_id": null,
+     "label": "Brand desire KPI - other",
+     "type": "short_text"
+    }
+   },
+   {
+    "name": "NPS KPI other",
+    "value": "NPS KPI other value",
+    "array_value": null,
+    "field": {
+     "id": "nps_kpi_other",
+     "internal_id": null,
+     "label": "NPS KPI other",
+     "type": "short_text"
+    }
+   }
+  ]
+ },
+ "card": {
+  "id": "1425600095",
+  "title": "AFCON Qualifiers - ATL suite",
+  "url": "https://app.pipefy.com/open-cards/1425600095",
+  "current_phase": {
+   "id": "343906141",
+   "name": "Brief Review - 1st Approval"
+  },
+  "pipe": {
+   "id": "307284210",
+   "name": "Campaign Briefing"
+  },
+  "assignees": [],
+  "fields": [
+   {
+    "name": "Brief attached",
+    "value": "[\"orgs/302505741/uploads/AFCON_reference_pack.pdf\"]",
+    "array_value": [
+     "orgs/302505741/uploads/AFCON_reference_pack.pdf"
+    ],
+    "field": {
+     "id": "brief_attached",
+     "internal_id": "432597910",
+     "label": "Brief attached",
+     "type": "attachment",
+     "index": -200.0
+    }
+   },
+   {
+    "name": "Brief owner",
+    "value": "[\"Jess Shepherd\"]",
+    "array_value": [
+     "Jess Shepherd"
+    ],
+    "field": {
+     "id": "brief_owner",
+     "internal_id": "432597912",
+     "label": "Brief owner",
+     "type": "assignee_select",
+     "index": -100.0
+    }
+   },
+   {
+    "name": "Is this job part of an approved campaign?",
+    "value": "Yes",
+    "array_value": null,
+    "field": {
+     "id": "is_this_job_part_of_an_approved_campaign",
+     "internal_id": "432597921",
+     "label": "Is this job part of an approved campaign?",
+     "type": "radio_horizontal",
+     "index": 1.0
+    }
+   },
+   {
+    "name": "Select campaign",
+    "value": "",
+    "array_value": null,
+    "field": {
+     "id": "campaign",
+     "internal_id": "432597924",
+     "label": "Select campaign",
+     "type": "connector",
+     "index": 2.0
+    }
+   },
+   {
+    "name": "Job name",
+    "value": "AFCON Qualifiers - ATL suite",
+    "array_value": null,
+    "field": {
+     "id": "job_name",
+     "internal_id": "432597926",
+     "label": "Job name",
+     "type": "short_text",
+     "index": 3.0
+    }
+   },
+   {
+    "name": "Brief type",
+    "value": "Integrated",
+    "array_value": null,
+    "field": {
+     "id": "brief_type",
+     "internal_id": "432597927",
+     "label": "Brief type",
+     "type": "select",
+     "index": 4.0
+    }
+   },
+   {
+    "name": "Tier",
+    "value": "",
+    "array_value": null,
+    "field": {
+     "id": "tier",
+     "internal_id": "432597928",
+     "label": "Tier",
+     "type": "select",
+     "index": 5.0
+    }
+   },
+   {
+    "name": "Originating OpCo",
+    "value": "",
+    "array_value": null,
+    "field": {
+     "id": "originating_opco",
+     "internal_id": "432597929",
+     "label": "Originating OpCo",
+     "type": "select",
+     "index": 6.0
+    }
+   },
+   {
+    "name": "Uganda division",
+    "value": "Business intelligence",
+    "array_value": null,
+    "field": {
+     "id": "uganda_division",
+     "internal_id": "432597930",
+     "label": "Uganda division",
+     "type": "select",
+     "index": 7.0
+    }
+   },
+   {
+    "name": "Uganda marketing division",
+    "value": "Brand & Communications",
+    "array_value": null,
+    "field": {
+     "id": "uganda_marketing_division",
+     "internal_id": "432597931",
+     "label": "Uganda marketing division",
+     "type": "select",
+     "index": 8.0
+    }
+   },
+   {
+    "name": "Uganda finance division",
+    "value": "Supply chain",
+    "array_value": null,
+    "field": {
+     "id": "uganda_finance_division",
+     "internal_id": "432597932",
+     "label": "Uganda finance division",
+     "type": "select",
+     "index": 9.0
+    }
+   },
+   {
+    "name": "Uganda enterprise division",
+    "value": "Large enterprise",
+    "array_value": null,
+    "field": {
+     "id": "uganda_enterprise_division",
+     "internal_id": "432597933",
+     "label": "Uganda enterprise division",
+     "type": "select",
+     "index": 10.0
+    }
+   },
+   {
+    "name": "Uganda technology division",
+    "value": "IT",
+    "array_value": null,
+    "field": {
+     "id": "uganda_technology_division",
+     "internal_id": "432597934",
+     "label": "Uganda technology division",
+     "type": "select",
+     "index": 11.0
+    }
+   },
+   {
+    "name": "Uganda corporate services division",
+    "value": "Legal and regulatory",
+    "array_value": null,
+    "field": {
+     "id": "uganda_corporate_services_division",
+     "internal_id": "432597935",
+     "label": "Uganda corporate services division",
+     "type": "select",
+     "index": 12.0
+    }
+   },
+   {
+    "name": "Uganda business intelligence division",
+    "value": "Research",
+    "array_value": null,
+    "field": {
+     "id": "uganda_business_intelligence_division",
+     "internal_id": "432597936",
+     "label": "Uganda business intelligence division",
+     "type": "select",
+     "index": 13.0
+    }
+   },
+   {
+    "name": "Zambia division",
+    "value": "CEO's office",
+    "array_value": null,
+    "field": {
+     "id": "zambia_division",
+     "internal_id": "432597937",
+     "label": "Zambia division",
+     "type": "select",
+     "index": 14.0
+    }
+   },
+   {
+    "name": "Zambia marketing division",
+    "value": "Brand and communications",
+    "array_value": null,
+    "field": {
+     "id": "zambia_marketing_division",
+     "internal_id": "432597938",
+     "label": "Zambia marketing division",
+     "type": "select",
+     "index": 15.0
+    }
+   },
+   {
+    "name": "Zambia enterprise business unit (EBU)",
+    "value": "Government",
+    "array_value": null,
+    "field": {
+     "id": "zambia_enterprise_business_unit_ebu",
+     "internal_id": "432597939",
+     "label": "Zambia enterprise business unit (EBU)",
+     "type": "select",
+     "index": 15.5
+    }
+   },
+   {
+    "name": "Zambia MTN home division",
+    "value": "Fibre to the home (FTTH)",
+    "array_value": null,
+    "field": {
+     "id": "zambia_mtn_home_division",
+     "internal_id": "432597940",
+     "label": "Zambia MTN home division",
+     "type": "select",
+     "index": 15.75
+    }
+   },
+   {
+    "name": "Zambia finance division",
+    "value": "Procurement",
+    "array_value": null,
+    "field": {
+     "id": "zambia_finance_division",
+     "internal_id": "432597941",
+     "label": "Zambia finance division",
+     "type": "select",
+     "index": 15.875
+    }
+   },
+   {
+    "name": "Zambia technology division",
+    "value": "IT",
+    "array_value": null,
+    "field": {
+     "id": "zambia_technology_division",
+     "internal_id": "432597942",
+     "label": "Zambia technology division",
+     "type": "select",
+     "index": 15.9375
+    }
+   },
+   {
+    "name": "Zambia corporate services",
+    "value": "Legal",
+    "array_value": null,
+    "field": {
+     "id": "zambia_corporate_services",
+     "internal_id": "432597943",
+     "label": "Zambia corporate services",
+     "type": "select",
+     "index": 15.96875
+    }
+   },
+   {
+    "name": "Required channels",
+    "value": "[\"ATL\", \"BTL\"]",
+    "array_value": [
+     "ATL",
+     "BTL"
+    ],
+    "field": {
+     "id": "required_channels",
+     "internal_id": "432597945",
+     "label": "Required channels",
+     "type": "checklist_vertical",
+     "index": 17.0
+    }
+   },
+   {
+    "name": "ATL elements",
+    "value": "[\"Cinema\", \"OOH (Out of Home)\"]",
+    "array_value": [
+     "Cinema",
+     "OOH (Out of Home)"
+    ],
+    "field": {
+     "id": "atl_elements",
+     "internal_id": "432597946",
+     "label": "ATL elements",
+     "type": "checklist_vertical",
+     "index": 18.0
+    }
+   },
+   {
+    "name": "BTL elements",
+    "value": "[\"CRM\", \"Digital & social media activations (BTL focused)\"]",
+    "array_value": [
+     "CRM",
+     "Digital & social media activations (BTL focused)"
+    ],
+    "field": {
+     "id": "btl_elements",
+     "internal_id": "432597947",
+     "label": "BTL elements",
+     "type": "checklist_vertical",
+     "index": 19.0
+    }
+   },
+   {
+    "name": "Digital elements",
+    "value": "[\"Behind the scenes\", \"Campaign web page / microsite\"]",
+    "array_value": [
+     "Behind the scenes",
+     "Campaign web page / microsite"
+    ],
+    "field": {
+     "id": "digital_elements",
+     "internal_id": "432597948",
+     "label": "Digital elements",
+     "type": "checklist_vertical",
+     "index": 20.0
+    }
+   },
+   {
+    "name": "Internal communications elements",
+    "value": "[\"AmaY\\u2019ello competition\", \"AmaY\\u2019ello messages\"]",
+    "array_value": [
+     "AmaY\u2019ello competition",
+     "AmaY\u2019ello messages"
+    ],
+    "field": {
+     "id": "internal_communications_elements",
+     "internal_id": "432597949",
+     "label": "Internal communications elements",
+     "type": "checklist_vertical",
+     "index": 21.0
+    }
+   },
+   {
+    "name": "Sponsorship and activation elements",
+    "value": "[\"Activation\", \"Branding\"]",
+    "array_value": [
+     "Activation",
+     "Branding"
+    ],
+    "field": {
+     "id": "sponsorship_and_activation_elements",
+     "internal_id": "432597950",
+     "label": "Sponsorship and activation elements",
+     "type": "checklist_vertical",
+     "index": 22.0
+    }
+   },
+   {
+    "name": "PR elements",
+    "value": "[\"Advertorial\", \"Blog\"]",
+    "array_value": [
+     "Advertorial",
+     "Blog"
+    ],
+    "field": {
+     "id": "pr_elements",
+     "internal_id": "432597951",
+     "label": "PR elements",
+     "type": "checklist_vertical",
+     "index": 23.0
+    }
+   },
+   {
+    "name": "First revert date",
+    "value": "2026-09-09T14:30:00-00:00",
+    "array_value": null,
+    "field": {
+     "id": "first_revert_date",
+     "internal_id": "432597953",
+     "label": "First revert date",
+     "type": "datetime",
+     "index": 25.0
+    }
+   },
+   {
+    "name": "Job go live date",
+    "value": "2026-09-02",
+    "array_value": null,
+    "field": {
+     "id": "job_go_live_date",
+     "internal_id": "432597954",
+     "label": "Job go live date",
+     "type": "date",
+     "index": 26.0
+    }
+   },
+   {
+    "name": "Material delivery date",
+    "value": "2026-10-05",
+    "array_value": null,
+    "field": {
+     "id": "material_delivery_date",
+     "internal_id": "432597955",
+     "label": "Material delivery date",
+     "type": "date",
+     "index": 27.0
+    }
+   },
+   {
+    "name": "Job end date",
+    "value": "2026-09-02",
+    "array_value": null,
+    "field": {
+     "id": "job_end_date",
+     "internal_id": "432597956",
+     "label": "Job end date",
+     "type": "date",
+     "index": 28.0
+    }
+   },
+   {
+    "name": "Key milestones",
+    "value": "- Concept lock 24 Aug\n- Shoot 02 Sep\n- First revert 09 Sep\n- Go live 20 Sep",
+    "array_value": null,
+    "field": {
+     "id": "key_milestones",
+     "internal_id": "432597957",
+     "label": "Key milestones",
+     "type": "long_text",
+     "index": 29.0
+    }
+   },
+   {
+    "name": "The brief in a sentence",
+    "value": "The brief in a sentence value",
+    "array_value": null,
+    "field": {
+     "id": "the_brief_in_a_sentence",
+     "internal_id": "432597959",
+     "label": "The brief in a sentence",
+     "type": "short_text",
+     "index": 32.0
+    }
+   },
+   {
+    "name": "Job objective",
+    "value": "Produce the full ATL and digital asset suite for the AFCON Qualifiers activation across Zambia and Uganda.",
+    "array_value": null,
+    "field": {
+     "id": "job_objective",
+     "internal_id": "432597960",
+     "label": "Job objective",
+     "type": "long_text",
+     "index": 33.0
+    }
+   },
+   {
+    "name": "Job background",
+    "value": "Sponsorship rights confirmed late, so the window is short and the OOH booking closes on the 12th.",
+    "array_value": null,
+    "field": {
+     "id": "job_background",
+     "internal_id": "432597961",
+     "label": "Job background",
+     "type": "long_text",
+     "index": 34.0
+    }
+   },
+   {
+    "name": "Key message",
+    "value": "Get more from every payday with MTN MoMo.",
+    "array_value": null,
+    "field": {
+     "id": "key_message",
+     "internal_id": "432597962",
+     "label": "Key message",
+     "type": "long_text",
+     "index": 35.0
+    }
+   },
+   {
+    "name": "Key requirements",
+    "value": "- Master 60s TVC plus 30s and 15s cutdowns\n- Six OOH executions, two per market\n- Social pack sized for IG, TikTok and X\n- All copy in English and Bemba",
+    "array_value": null,
+    "field": {
+     "id": "key_requirements",
+     "internal_id": "432597963",
+     "label": "Key requirements",
+     "type": "long_text",
+     "index": 36.0
+    }
+   },
+   {
+    "name": "Creative inspiration",
+    "value": "[\"Attachment(s)\", \"Free text / Link(s)\"]",
+    "array_value": [
+     "Attachment(s)",
+     "Free text / Link(s)"
+    ],
+    "field": {
+     "id": "creative_inspiration",
+     "internal_id": "432597964",
+     "label": "Creative inspiration",
+     "type": "checklist_horizontal",
+     "index": 37.0
+    }
+   },
+   {
+    "name": "Creative inspiration attachment(s)",
+    "value": "[\"orgs/302505741/uploads/AFCON_reference_pack.pdf\"]",
+    "array_value": [
+     "orgs/302505741/uploads/AFCON_reference_pack.pdf"
+    ],
+    "field": {
+     "id": "creative_inspiration_attachment_s",
+     "internal_id": "432597965",
+     "label": "Creative inspiration attachment(s)",
+     "type": "attachment",
+     "index": 38.0
+    }
+   },
+   {
+    "name": "Creative inspiration free text / link(s)",
+    "value": "https://frontify.example/mtn/afcon-moodboard",
+    "array_value": null,
+    "field": {
+     "id": "creative_inspiration_free_text_link_s",
+     "internal_id": "432597966",
+     "label": "Creative inspiration free text / link(s)",
+     "type": "long_text",
+     "index": 39.0
+    }
+   },
+   {
+    "name": "FAQs and customer journey",
+    "value": "[\"Attachment(s)\", \"Free text / Link(s)\"]",
+    "array_value": [
+     "Attachment(s)",
+     "Free text / Link(s)"
+    ],
+    "field": {
+     "id": "faqs_and_customer_journey",
+     "internal_id": "432597967",
+     "label": "FAQs and customer journey",
+     "type": "checklist_horizontal",
+     "index": 40.0
+    }
+   },
+   {
+    "name": "FAQs and customer journey attachment(s)",
+    "value": "[\"orgs/302505741/uploads/AFCON_reference_pack.pdf\"]",
+    "array_value": [
+     "orgs/302505741/uploads/AFCON_reference_pack.pdf"
+    ],
+    "field": {
+     "id": "faqs_and_customer_journey_attachment_s",
+     "internal_id": "432597968",
+     "label": "FAQs and customer journey attachment(s)",
+     "type": "attachment",
+     "index": 41.0
+    }
+   },
+   {
+    "name": "FAQs and customer journey free text / link(s)",
+    "value": "Customer journey doc is on the shared drive, v4.",
+    "array_value": null,
+    "field": {
+     "id": "faqs_and_customer_journey_free_text_link_s",
+     "internal_id": "432597969",
+     "label": "FAQs and customer journey free text / link(s)",
+     "type": "long_text",
+     "index": 42.0
+    }
+   },
+   {
+    "name": "Strategic element",
+    "value": "",
+    "array_value": null,
+    "field": {
+     "id": "strategic_pillar",
+     "internal_id": "432597970",
+     "label": "Strategic element",
+     "type": "select",
+     "index": 43.0
+    }
+   },
+   {
+    "name": "Ugandan promotion budget",
+    "value": "1250000",
+    "array_value": null,
+    "field": {
+     "id": "ugandan_promotion_budget",
+     "internal_id": "432689314",
+     "label": "Ugandan promotion budget",
+     "type": "currency",
+     "index": 43.125
+    }
+   },
+   {
+    "name": "Zambian promotion budget",
+    "value": "1250000",
+    "array_value": null,
+    "field": {
+     "id": "zambian_promotion_budget",
+     "internal_id": "432689308",
+     "label": "Zambian promotion budget",
+     "type": "currency",
+     "index": 43.15625
+    }
+   },
+   {
+    "name": "Ugandan positioning budget",
+    "value": "880000",
+    "array_value": null,
+    "field": {
+     "id": "ugandan_positioning_budget",
+     "internal_id": "432689336",
+     "label": "Ugandan positioning budget",
+     "type": "currency",
+     "index": 43.171875
+    }
+   },
+   {
+    "name": "Zambian positioning budget",
+    "value": "1250000",
+    "array_value": null,
+    "field": {
+     "id": "zambian_positioning_budget",
+     "internal_id": "432689315",
+     "label": "Zambian positioning budget",
+     "type": "currency",
+     "index": 43.1875
+    }
+   },
+   {
+    "name": "Ugandan proposition budget",
+    "value": "1250000",
+    "array_value": null,
+    "field": {
+     "id": "ugandan_proposition_budget",
+     "internal_id": "432689358",
+     "label": "Ugandan proposition budget",
+     "type": "currency",
+     "index": 43.25
+    }
+   },
+   {
+    "name": "Zambian proposition budget",
+    "value": "880000",
+    "array_value": null,
+    "field": {
+     "id": "zambian_proposition_budget",
+     "internal_id": "432689338",
+     "label": "Zambian proposition budget",
+     "type": "currency",
+     "index": 43.3125
+    }
+   },
+   {
+    "name": "Target audience",
+    "value": "",
+    "array_value": null,
+    "field": {
+     "id": "target_audience",
+     "internal_id": "432597971",
+     "label": "Target audience",
+     "type": "checklist_vertical",
+     "index": 43.5
+    }
+   },
+   {
+    "name": "Target audience - other",
+    "value": "Target audience - other value",
+    "array_value": null,
+    "field": {
+     "id": "target_audience_other",
+     "internal_id": "432597972",
+     "label": "Target audience - other",
+     "type": "short_text",
+     "index": 43.6875
+    }
+   },
+   {
+    "name": "Target audience additional information",
+    "value": "Skew male 18-34 for the sport-led executions; keep the retail cutdowns audience-neutral.",
+    "array_value": null,
+    "field": {
+     "id": "target_audience_additional_information",
+     "internal_id": "432597973",
+     "label": "Target audience additional information",
+     "type": "long_text",
+     "index": 46.34375
+    }
+   },
+   {
+    "name": "Competitor context",
+    "value": "[\"Attachment(s)\", \"Free text / Link(s)\"]",
+    "array_value": [
+     "Attachment(s)",
+     "Free text / Link(s)"
+    ],
+    "field": {
+     "id": "competitor_context",
+     "internal_id": "432597974",
+     "label": "Competitor context",
+     "type": "checklist_horizontal",
+     "index": 49.0
+    }
+   },
+   {
+    "name": "Competitor context attachment(s)",
+    "value": "[\"orgs/302505741/uploads/AFCON_reference_pack.pdf\"]",
+    "array_value": [
+     "orgs/302505741/uploads/AFCON_reference_pack.pdf"
+    ],
+    "field": {
+     "id": "competitor_context_attachment_s",
+     "internal_id": "432597975",
+     "label": "Competitor context attachment(s)",
+     "type": "attachment",
+     "index": 50.0
+    }
+   },
+   {
+    "name": "Competitor context free text / link(s)",
+    "value": "Airtel ran a similar sponsorship play in 2025 \u2014 avoid the yellow-on-green treatment.",
+    "array_value": null,
+    "field": {
+     "id": "competitor_context_free_text_link_s",
+     "internal_id": "432597976",
+     "label": "Competitor context free text / link(s)",
+     "type": "long_text",
+     "index": 51.0
+    }
+   },
+   {
+    "name": "Go to market plan",
+    "value": "[\"Attachment(s)\", \"Free text / Link(s)\"]",
+    "array_value": [
+     "Attachment(s)",
+     "Free text / Link(s)"
+    ],
+    "field": {
+     "id": "go_to_market_plan",
+     "internal_id": "432597977",
+     "label": "Go to market plan",
+     "type": "checklist_horizontal",
+     "index": 52.0
+    }
+   },
+   {
+    "name": "Go to market plan attachment(s)",
+    "value": "[\"orgs/302505741/uploads/AFCON_reference_pack.pdf\"]",
+    "array_value": [
+     "orgs/302505741/uploads/AFCON_reference_pack.pdf"
+    ],
+    "field": {
+     "id": "go_to_market_plan_attachment_s",
+     "internal_id": "432597978",
+     "label": "Go to market plan attachment(s)",
+     "type": "attachment",
+     "index": 53.0
+    }
+   },
+   {
+    "name": "Go to market plan free text / link(s)",
+    "value": "Phased: teaser week 1, hero week 2-4, sustain week 5-6.",
+    "array_value": null,
+    "field": {
+     "id": "go_to_market_plan_free_text_link_s",
+     "internal_id": "432597979",
+     "label": "Go to market plan free text / link(s)",
+     "type": "long_text",
+     "index": 54.0
+    }
+   },
+   {
+    "name": "KPI pillar",
+    "value": "",
+    "array_value": null,
+    "field": {
+     "id": "kpi_pillar",
+     "internal_id": "432597980",
+     "label": "KPI pillar",
+     "type": "checklist_vertical",
+     "index": 55.0
+    }
+   },
+   {
+    "name": "KPI pillar - other",
+    "value": "KPI pillar - other value",
+    "array_value": null,
+    "field": {
+     "id": "kpi_pillar_other_please_specify",
+     "internal_id": "432597981",
+     "label": "KPI pillar - other",
+     "type": "short_text",
+     "index": 55.25
+    }
+   },
+   {
+    "name": "Awareness KPI",
+    "value": "[\"Ad recall\", \"Frequency\"]",
+    "array_value": [
+     "Ad recall",
+     "Frequency"
+    ],
+    "field": {
+     "id": "awareness_kpi",
+     "internal_id": "432597982",
+     "label": "Awareness KPI",
+     "type": "checklist_vertical",
+     "index": 56.0
+    }
+   },
+   {
+    "name": "Awareness KPI - other",
+    "value": "Awareness KPI - other value",
+    "array_value": null,
+    "field": {
+     "id": "awareness_kpi_other_please_specify",
+     "internal_id": "432597983",
+     "label": "Awareness KPI - other",
+     "type": "short_text",
+     "index": 56.5
+    }
+   },
+   {
+    "name": "Acquisition & growth KPI",
+    "value": "[\"Churn rate reduction\", \"Data bundle purchases\"]",
+    "array_value": [
+     "Churn rate reduction",
+     "Data bundle purchases"
+    ],
+    "field": {
+     "id": "acquisition_growth_kpi",
+     "internal_id": "432597984",
+     "label": "Acquisition & growth KPI",
+     "type": "checklist_vertical",
+     "index": 57.0
+    }
+   },
+   {
+    "name": "Acquisition & growth KPI - other",
+    "value": "Acquisition & growth KPI - other value",
+    "array_value": null,
+    "field": {
+     "id": "acquisition_growth_kpi_other_please_specify",
+     "internal_id": "432597985",
+     "label": "Acquisition & growth KPI - other",
+     "type": "short_text",
+     "index": 57.5
+    }
+   },
+   {
+    "name": "Digital communication KPI",
+    "value": "[\"App active users\", \"App installs\"]",
+    "array_value": [
+     "App active users",
+     "App installs"
+    ],
+    "field": {
+     "id": "digital_communication_kpi",
+     "internal_id": "432597986",
+     "label": "Digital communication KPI",
+     "type": "checklist_vertical",
+     "index": 58.0
+    }
+   },
+   {
+    "name": "Digital communication KPI - other",
+    "value": "Digital communication KPI - other value",
+    "array_value": null,
+    "field": {
+     "id": "digital_communication_kpi_other_please_specify",
+     "internal_id": "432597987",
+     "label": "Digital communication KPI - other",
+     "type": "short_text",
+     "index": 58.5
+    }
+   },
+   {
+    "name": "Brand desire KPI",
+    "value": "[\"Data contribution\", \"MOMO contribution\"]",
+    "array_value": [
+     "Data contribution",
+     "MOMO contribution"
+    ],
+    "field": {
+     "id": "brand_desire_kpi",
+     "internal_id": "432597988",
+     "label": "Brand desire KPI",
+     "type": "checklist_vertical",
+     "index": 59.0
+    }
+   },
+   {
+    "name": "Brand desire KPI - other",
+    "value": "Brand desire KPI - other value",
+    "array_value": null,
+    "field": {
+     "id": "brand_desire_kpi_other_please_specify",
+     "internal_id": "432597989",
+     "label": "Brand desire KPI - other",
+     "type": "short_text",
+     "index": 59.5
+    }
+   },
+   {
+    "name": "NPS KPI",
+    "value": "[\"Brand NPS\", \"Overall NPS\"]",
+    "array_value": [
+     "Brand NPS",
+     "Overall NPS"
+    ],
+    "field": {
+     "id": "nps_kpi",
+     "internal_id": "432597990",
+     "label": "NPS KPI",
+     "type": "checklist_vertical",
+     "index": 60.0
+    }
+   },
+   {
+    "name": "NPS KPI - other",
+    "value": "NPS KPI - other value",
+    "array_value": null,
+    "field": {
+     "id": "nps_kpi_other_please_specify",
+     "internal_id": "432597991",
+     "label": "NPS KPI - other",
+     "type": "short_text",
+     "index": 60.5
+    }
+   },
+   {
+    "name": "Zambia agencies required",
+    "value": "[\"Curiosity\", \"Fulcrum\"]",
+    "array_value": [
+     "Curiosity",
+     "Fulcrum"
+    ],
+    "field": {
+     "id": "zambia_agencies_required",
+     "internal_id": "432597993",
+     "label": "Zambia agencies required",
+     "type": "checklist_vertical",
+     "index": 62.0
+    }
+   },
+   {
+    "name": "Uganda agencies required",
+    "value": "[\"Baitu Group\", \"Creatabuzz\"]",
+    "array_value": [
+     "Baitu Group",
+     "Creatabuzz"
+    ],
+    "field": {
+     "id": "uganda_agencies_required",
+     "internal_id": "432597994",
+     "label": "Uganda agencies required",
+     "type": "checklist_vertical",
+     "index": 63.0
+    }
+   },
+   {
+    "name": "Existing assets for reference or use",
+    "value": "[\"Attachment(s)\", \"Free text / Link(s)\"]",
+    "array_value": [
+     "Attachment(s)",
+     "Free text / Link(s)"
+    ],
+    "field": {
+     "id": "existing_assets_for_reference_or_use",
+     "internal_id": "432597995",
+     "label": "Existing assets for reference or use",
+     "type": "checklist_horizontal",
+     "index": 64.0
+    }
+   },
+   {
+    "name": "Existing assets for reference or use attachment(s)",
+    "value": "[\"orgs/302505741/uploads/AFCON_reference_pack.pdf\"]",
+    "array_value": [
+     "orgs/302505741/uploads/AFCON_reference_pack.pdf"
+    ],
+    "field": {
+     "id": "existing_assets_for_reference_or_use_attachment_s",
+     "internal_id": "432597996",
+     "label": "Existing assets for reference or use attachment(s)",
+     "type": "attachment",
+     "index": 65.0
+    }
+   },
+   {
+    "name": "Existing assets for reference or use free text / link(s)",
+    "value": "Reuse the 2025 stadium footage where the sponsor boards are not visible.",
+    "array_value": null,
+    "field": {
+     "id": "existing_assets_for_reference_or_use_free_text_link_s",
+     "internal_id": "432597997",
+     "label": "Existing assets for reference or use free text / link(s)",
+     "type": "long_text",
+     "index": 66.0
+    }
+   },
+   {
+    "name": "Select campaign",
+    "value": "AFCON Qualifiers 2026",
+    "array_value": [
+     "9911"
+    ],
+    "field": {
+     "id": "campaign",
+     "internal_id": "432597924",
+     "label": "Select campaign",
+     "type": "connector"
+    }
+   },
+   {
+    "name": "Reviewer",
+    "value": "[\"Jess Shepherd\"]",
+    "array_value": [
+     "Jess Shepherd"
+    ],
+    "field": {
+     "id": "reviewer",
+     "internal_id": "432597911",
+     "label": "Reviewer",
+     "type": "assignee_select"
+    }
+   },
+   {
+    "name": "Job review decision",
+    "value": "Approve",
+    "array_value": null,
+    "field": {
+     "id": "job_review_decision",
+     "internal_id": "432597923",
+     "label": "Job review decision",
+     "type": "radio_horizontal"
+    }
+   },
+   {
+    "name": "Does this decision need a second approver?",
+    "value": "Yes",
+    "array_value": null,
+    "field": {
+     "id": "does_this_decision_need_a_second_approver",
+     "internal_id": "432696128",
+     "label": "Does this decision need a second approver?",
+     "type": "radio_horizontal"
+    }
+   },
+   {
+    "name": "Review Feedback",
+    "value": "Placeholder copy for Review Feedback.",
+    "array_value": null,
+    "field": {
+     "id": "review_feedback",
+     "internal_id": "432597925",
+     "label": "Review Feedback",
+     "type": "long_text"
+    }
+   }
+  ]
+ }
+}

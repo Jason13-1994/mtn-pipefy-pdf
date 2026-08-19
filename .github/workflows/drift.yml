@@ -1,0 +1,33 @@
+# drift.yml — check_drift.py CI gate (TEST-04, half B).
+#
+# STATUS (per locked decision D-02): structurally correct, authored and
+# source-verified offline, NOT YET PROVEN TO FIRE. No dedicated MTN git
+# repository exists yet — this project is still untracked inside the
+# personal multi-client `Jason13-1994/client-docs` workspace repo. Proving
+# this workflow actually runs on push/schedule is Phase 3's responsibility,
+# once the repo extraction happens (ROADMAP.md Phase 3 success criterion 0).
+#
+# Needs exactly one secret (see the env: block on the check_drift.py step
+# below), added as a GitHub Actions repository secret once that repo exists
+# (Settings -> Secrets and variables -> Actions). Zero code change:
+# my_pipefy.fn_resolve_token() already falls through to that exact env-var
+# name after its usual local-ini config source (absent and gitignored in a
+# fresh CI checkout). check_drift.py is read-only — no mutation, per its
+# own module docstring.
+name: drift-check
+on:
+  push:
+  schedule:
+    - cron: "0 6 * * 1" # weekly, Monday 06:00 UTC
+jobs:
+  drift:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.14"
+      - run: pip install -r requirements.txt
+      - run: python check_drift.py --quiet-log
+        env:
+          MTN_PIPEFY_TOKEN: ${{ secrets.MTN_PIPEFY_TOKEN }}

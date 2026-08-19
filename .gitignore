@@ -1,0 +1,11 @@
+segredo.ini
+venv/
+__pycache__/
+*.pyc
+out/
+*.pdf
+.claude/
+.planning/
+.pytest_cache/
+.env
+.env.txt

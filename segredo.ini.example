@@ -1,0 +1,38 @@
+; segredo.ini.example — same keys, blank values. THIS FILE IS COMMITTED.
+; Copy to segredo.ini on the box, fill it in, chmod 600. segredo.ini is
+; git-ignored and must never be committed.
+
+[Service]
+name = mtn_pipefy_pdf
+port = 5040
+bind = 127.0.0.1
+http_timeout = 120
+retry_count = 5
+; Seconds. A repeat generation for the same card inside this window is skipped.
+; Kept short: a brief bouncing Brief Updates -> Brief Review SHOULD regenerate.
+idempotency_ttl_seconds = 60
+; Sent as X-MTN-Replay-Token to force a regeneration inside the window.
+replay_token =
+; Sent as X-MTN-PDF-Token by the Pipefy automation and checked on every
+; request to /generate-pdf — a blank or short value means every request is
+; rejected with 401, not that authentication is skipped. The startup guard
+; below only blocks a blank/short value on a non-loopback bind (kept for
+; local dev convenience); on any bind that is actually reachable — including
+; 127.0.0.1 behind Nginx, which is what production uses — set a real value
+; of at least 20 characters or the service will accept nothing.
+webhook_secret =
+
+[Pipefy]
+api_url = https://api.pipefy.com/graphql
+; Service-account token. Needs WRITE on 307284210 and 307284211, READ on
+; table mOUzRnnK. Not a personal PAT.
+token =
+organization_id = 302505741
+
+[PaperTrail]
+papertrail_log_url = https://logs.collector.solarwinds.com/v1/log
+papertrail_log_token =
+
+[Output]
+; Where make_pdf.py writes dry-run PDFs.
+out_dir = ./out

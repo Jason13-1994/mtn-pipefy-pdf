@@ -1,0 +1,16 @@
+[Unit]
+Description=MTN Pipefy PDF Generator integration service
+After=network.target
+
+[Service]
+Type=simple
+User=ubuntu
+WorkingDirectory=/home/ubuntu/mtn-pipefy-pdf
+ExecStart=/home/ubuntu/mtn-pipefy-pdf/venv/bin/uvicorn main:app --host 127.0.0.1 --port 5040 --timeout-keep-alive 90
+Restart=always
+RestartSec=5
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
